@@ -13,11 +13,11 @@
 	float: left;
 	width: 10%;
 	margin: 0 0 0 0;
+}
 #resume{
 	float: left;
 	width: 10%;
 	margin: 0 0 0 0;
-}
 }
 #resumepanel{
 	float: left;	
@@ -37,6 +37,27 @@
 	width: 80%;
 	margin: 0 10% 0 10%;
 }
+#education{
+	float: left;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+#contact{
+	float: left;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+/*Below are the different headings types, to be consistent across all pages and projects. 
+Forthcoming style guide may adress certain formatting rules, but for now these will do.*/
+
+pageheading{
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight:400;
+	font-family: 'Montserrat', sans-serif;
+}
+
 mainheading{
 	font-size: 25px;
 	letter-spacing: 4px;
@@ -59,16 +80,34 @@ t{
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
 }
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: gray;
+	text-decoration: none;
+}
 #divline{
 	border-style: solid;
 	border-width: 0.5px;
 	border-color: #000000;
 	width: 100% - 1px;
 }
+#thickdivline{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	width: 100% - 1px;
+}
 </style>
 
 <div id="pageheader">
-	<mainheading>Michael Hartmann</mainheading>
+	<pageheading>Michael Hartmann</pageheading>
 	<br>
 	<div id="home">
 		<heading><a href="home.html">Home</a></heading>
@@ -76,15 +115,45 @@ t{
 	<div id="resume">
 		<heading><a href="resume.html">Resume</a></heading>
 	</div>
+	<br>
+	<br>
+	<div id="thickdivline"></div>
+</div>
+
+<div id="contact">
+	<mainheading>Contact</mainheading>
+		<div id="divline"></div>
+	<br>
+	<div id="linkedin">	
+		<heading><a href="https://www.linkedin.com/in/michael-hartmann/">LinkedIn</a></heading>
+	</div>
+	<div id="email">
+		<heading><a href="mailto:michaelpeterhartmann94@gmail.com">Email</a></heading>
+	</div>
+	<div id="instagram">
+		<heading><a href="https://www.instagram.com/michaelpeterhartmann/">Instagram</a></heading>
+	</div>
+	<br>
 </div>
 
 <div id="education">
 	<mainheading>Education</mainheading>
-		<div id=:divline"></div>
+		<div id="divline"></div>
 	<br>
-	<heading>Trinity Western Univeristy</heading>
+	<heading>Trinity Western University</heading>
+	<br>
+	<subheading>Bachelors of Business Administration // Concentration in Finance</subheading>
+	<br>
+	<subheading>September 2015 to Present</subheading>
+	<br>
 	<br>
 	<heading>Kwantlen Polytechnic</heading>
+	<br>
+	<subheading>Bachelors of Business Administration // Entrepreneurial Leadership</subheading>
+	<br>
+	<subheading>September 2013 to April 2015</subheading>
+	<br>
+	<br>
 </div>
 
 <div id="skills">
