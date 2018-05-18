@@ -49,6 +49,7 @@ t{
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
 }
+
 a:link{
 	color: black;
 	text-decoration: none;
@@ -75,77 +76,3 @@ a:hover{
 	border-color: #000000;
 	width: 100% - 1px;
 }
-
-
-/*
-All standard format divs are below:
-
-BREW JOURNAL ENTRY STANDARD FORM
-<div id="journalentry">
-	<div id="coffeename">
-		<div id="divline"></div>
-		<mainheading><b>Coffee Brewed:</b> Hartmann's Marogogype // Panama, Finca Hartmann<!---Name of coffee here---!></mainheading>
-		<div id="divline"></div>
-	</div>
-
-	<heading><b>Brew Method:</b> <!---Method of brew here---!></heading>
-	<br>
-	<heading><b>Location:</b> <!---Place coffee brewed here---!></heading>
-	<br>
-	<heading><b>Date:</b> <!---Date of brew here---!></heading>
-	<br>
-	<heading><b>Weight:</b> <!---Weight of grounds here---!></heading>
-	<br>
-	<heading><b>Grind Setting:</b> <!---Grind setting for brew here---!></heading>
-	<br>
-	<heading><b>Water Temperature:</b> <!---Water temp for brew here---!></heading>
-	<br>
-	<br>
-	<mainheading>Instructions:</mainheading>
-	<br>
-	<!---
-	Instructions can go below, with no labels for bloom etc.
-	The format should be:
-	From XX:XX to XX:XX pour XXX grams of water
-	or
-	From XX:XX to XX:XX stir/spin/plunge
-	or
-	At XX:XX stir/spin XX number of times
-	---!>
-	<subheading>1:</subheading>
-	<t><!---Placeholder---!></t>
-	<br>
-	<subheading>2:</subheading>
-	<t><!---Placeholder---!></t>
-	<br>
-	<subheading>3:</subheading>
-	<t><!---Placeholder---!></t>
-	<br>
-	<subheading>4:</subheading>
-	<t><!---Placeholder---!></t>
-	<br>
-	<subheading>5:</subheading>
-	<t><!---Placeholder---!></t>
-	<br>
-	<div id="divline"></div>
-</div>
-
-PAGE HEADER STANDARD
-<div id="pageheader">
-	<pageheading>Michael Hartmann</pageheading>
-	<br>
-	<div id="home">
-		<heading><a href="home.html">Home</a></heading>
-	</div>
-	<div id="resume">
-		<heading><a href="resume.html">Resume</a></heading>
-	</div>
-	<div id="brewjournal">
-		<heading><a href="coffeejournal.html">Brew Journal</a></heading>
-	</div>
-	<br>
-	<br>
-	<div id="thickdivline"></div>
-</div>
-
-*/
