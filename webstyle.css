@@ -5,7 +5,62 @@
    height: 100%;
    background-image: url("pic.jpg"); 
 }
-
+#body{ /*Body Section*/
+	float: left;
+	width: 100%;
+	margin: 0 0 10% 0
+}
+#about{ /*About Section*/
+	float: left;	
+	width: 80%;
+	margin: 0 10% 5% 10%;
+}
+#experience{ /*Experience Section*/
+	float: left;	
+	width: 80%;
+	margin: 0 10% 5% 10%;
+}
+#qualifications{ /*Qualifications Section*/
+	float: left;
+	width: 80%;
+	margin: 0 10% 5% 10%;
+}
+#skills{ /*Skills Section*/
+	float: left;
+	width: 80%;
+	margin: 0 10% 5% 10%;
+}
+#education{ /*Education Section*/
+	float: left;
+	width: 80%;
+	margin: 0 10% 5% 10%;
+}
+#contact{ /*Contact Section*/
+	float: left;
+	width: 80%;
+	margin: 0% 10% 5% 10%;
+}
+#linkedin{ /*LinkedIn Link
+*/
+	float: left;
+	width: 5%;
+	margin: 0 10% 0 5%;
+}
+#email{ /*Email Link*/
+	float: left;
+	width: 5%;
+	margin: 0 10% 0 5%;
+}
+#instagram{ /*Instagram Link*/
+	float: left;
+	width: 5%;
+	margin: 0 10% 0 5%;
+}
+#stack{ /*Stack Exchange Link*/
+	float: left;
+	width: 5%;
+	margin: 0 10% 0 5%;
+}
 
 
 /*The site header for links to other pages are below*/
