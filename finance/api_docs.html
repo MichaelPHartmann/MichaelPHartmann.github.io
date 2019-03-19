@@ -28,9 +28,15 @@
 }
 .endpoints{
 	width: 100%;
-	background-color:lightgrey;
+	background-color:grey;
 	border-style: solid;
 	border-color: black;
+}
+.usage{
+	margin: 2.5% 5% 0% 5%;
+	width: 90%;
+	background-color: lightgrey;
+	border-style: inset;
 }
 
 </style>
@@ -99,133 +105,477 @@
 			<div class="endpoints">
 				<heading>Company</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns short summary of requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Key Stats</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns key financial and price stats for a company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1/5</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.key_stats(symbol, stat=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						stat: string, dict value requested, optional
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#key-stats">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Logo</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns the Google Image API URL result for the requested company's logo.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.logo(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#logo">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>News</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns recent news for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.news(symbol, last=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						last: number, between 1 and 50, optional
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#news">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Peers</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns list of peer companies.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 500</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.peers(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#peers">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Relevant Stocks</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns stocks similar to requested company. Returns peers if list is the same.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 500</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.relevant(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#relevant-stocks">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Financials</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns select financial values for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 5000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.financials(symbol, period=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						period: string, annual or quarterly, optional (default monthly)
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#financials">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Dividends</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns dividend information for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 10</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.dividends(symbol, range)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						range: string, mandatory
+						<br>
+						Values: ['5Y','2Y','1Y','ytd','6m','3m','1m','next']
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#dividends">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Earnings</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns earnings data for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.earnings(symbol, last=None, field=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						last: number, optional
+						<br>
+						field: string, dict values to return, optional
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#earnings">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Income Statement</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns income statement for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.income_statement(symbol, period=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						period: string, annual or quarterly, optional (default monthly)
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#income-statement">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Balance Sheet</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns balance sheet for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 3000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.balance_sheet(symbol, period=None)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						period: string, annual or quarterly, optional (default monthly)
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#balance-sheet">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Cash Flow Statement</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns cash flow statement for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.cash_flow(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+						<br>
+						period: string, annual or quarterly, optional (default monthly)
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#cash-flow">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Estimates</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns consensus estimate for next fiscal period.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 10,000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.estimates(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#estimates">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Price Targets</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns analyst price targets for a requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 500</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.price_target(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#price-target">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Recommendation Trends</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns analyst recommendation trends for a requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.recommendation_trends(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#recommendation-trends">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Insider Roster</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns top 10 insiders for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 5000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.insider_roster(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#insider-roster">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Insider Summary</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns summary of insiders for requested company.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 5000</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.insider_summary(symbol)</subheading>
+					<br>
+					<t>
+						symbol: string, mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#insider-summary">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Insider Transactions</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns information on insider trades for the requested company.
+					Only available to launch, growth, and scale users.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 50</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.insider_transactions(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#insider-transactions">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
 			<div class="endpoints">
 				<heading>Effective Spread</heading>
 				<br>
-				<subheading>Returns </subheading>
+				<subheading>Returns an array of effective spread, eligible volume, and price improvement for a requested stock.</subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 0</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.effective_spread(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#effective-spread">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -233,6 +583,23 @@
 				<heading>Market Volume</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: 1</subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -240,6 +607,23 @@
 				<heading>Volume by Venue</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -247,6 +631,23 @@
 				<heading>Quote</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -254,6 +655,23 @@
 				<heading>Delayed Quote</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -261,6 +679,23 @@
 				<heading>Price</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -268,6 +703,23 @@
 				<heading>Historical Prices</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -275,6 +727,23 @@
 				<heading>OHLC Prices</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -282,6 +751,23 @@
 				<heading>Open/Close Prices</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -289,6 +775,23 @@
 				<heading>Previous Days Prices</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -296,6 +799,23 @@
 				<heading>Splits</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -303,6 +823,23 @@
 				<heading>Book</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -310,6 +847,23 @@
 				<heading>Batch Requests</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -317,6 +871,23 @@
 				<heading>Collections</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -324,6 +895,23 @@
 				<heading>Earnings Today</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -331,6 +919,23 @@
 				<heading>IPO Calendar</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -338,6 +943,23 @@
 				<heading>Fund Ownership</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -345,6 +967,23 @@
 				<heading>Largest Trades</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -352,6 +991,23 @@
 				<heading>List</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
@@ -359,6 +1015,23 @@
 				<heading>Sector Performance</heading>
 				<br>
 				<subheading>Returns </subheading>
+				<br>
+				<br>
+				<subheading>Data Weighting: </subheading>
+				<br>
+				<br>
+				<subheading>usage:</subheading>
+				<div class="usage">
+				  <subheading>prefix.company(symbol)</subheading>
+					<br>
+					<t>
+						symbol: mandatory
+					</t>
+				</div>
+				<br>
+				<br>
+				<subheading>Link to Source: <a href="https://iexcloud.io/docs/api/#company">IEX Cloud Docs</a></subheading>
+				<br>
 			</div>
 			<br>
 
