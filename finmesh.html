@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Michael Hartmann // FinMesh</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
+<link rel = "stylesheet" href = "mikewebstyle.css" />
+<!-- Please Keep It Neat -->
+
+<div class='page'>
+<!--HEADER BEGINS HERE-->
+  <div class='toptitle'>
+    <pageheading>Michael Hartmann</pageheading>
+  </div>
+  <br>
+  <div class='topnav'>
+    <mainheading><a href='index.html'>Home // </a></mainheading>
+    <mainheading><a href='resume.html'>Resume // </a></mainheading>
+    <mainheading><a href='finmesh.html'>FinMesh // </a></mainheading>
+    <br>
+    <div id="thickdivline"></div>
+  </div>
+<!--HEADER ENDS HERE-->
+
+<mainheading>FinMesh</mainheading>
+<div id='thickdivline'></div>
+<br>
+<t>FinMesh is a python-based package that brings together financial data from various
+sources in one place for ease of use and distribution. The three main sections of
+FinMesh are:
+(1) the <a href='https://iexcloud.io/docs/api/'>IEX REST API</a>,
+(2) data from the <a href='https://www.treasury.gov/resource-center/data-chart-center/digitalstrategy/pages/developer.aspx'>US treasury</a>, and
+(3) the data from the <a href='https://fred.stlouisfed.org/'>US Federal Reserve Economic Data</a>.
+<br>
+<br>
+
+<mainheading>Purpose</mainheading>
+<div id='thickdivline'></div>
+<br>
+The purpose of this package and its sub-packages was originally to practice interacting
+with API data. With third-party API packages there is always the risk of outages or bugs.
+In building the original IEX wrapper we sought to build something easy to understand and use,
+that can be updated quickly and accurately.
+<br>
+<br>
+With the addition of the US Federal data the opportunity arose to create a package that
+could deliver all sorts of economic and security data from one place. In doing so we
+hope to create a low-barrier way for beginners to play with large and very useful data sets.
+In the future, this package will be updated with new financial and economic APIs.
+<br>
+<br>
+If you know of a low or no cost API that could be incorporated
+please raise it as an issue and we will work to have it done ASAP.
+<br>
+<br>
+
+<mainheading>Installation</mainheading>
+<div id='thickdivline'></div>
+<br>
+FinMesh is available publicly from <a href='https://pypi.org/project/FinMesh/'><u>PYPI</u></a>
+and can be installed and updated through a command line pip. Because the package is still growing
+and changing be sure to update often or check the <a href='https://pypi.org/project/FinMesh/'>PYPI</a> page for possible updates.
+<br>
+<br>
+The following dependencies are used in FinMesh:
+<br>
+- OS
+<br>
+- CSV
+<br>
+- JSON
+<br>
+- Requests
+<br>
+- xmltodict
+<br>
+<br>
+Some APIs require authentication through the use of tokens. These tokens should be
+set up as environment variables in the bash profile.
+A great article on how to do this on Mac is available here:
+<br>
+<br>
+<a href='https://natelandau.com/my-mac-osx-bash_profile/'>-->My Mac OSX Bash Profile<--</a>
+<br>
+<br>
+Click <a href='https://iexcloud.io/'><u>HERE</u></a> for your free IEX token.
+<br>
+This token must be stored as IEX_TOKEN in your environment variables.
+<br>
+<br>
+Click <a href='https://fred.stlouisfed.org/'><u>HERE</u></a> for your free FRED token.
+<br>
+This token must be stored as FRED_TOKEN in your environment variables.
+<br>
+<br>
+
+<mainheading>IEX Sandbox Mode</mainheading>
+<div id='thickdivline'></div>
+<br>
+Further, if you wish to make use of IEX's sandbox mode, you will need to create a couple
+more environment variables. You will first need to save your test token as
+IEX_SANDBOX_TOKEN and create a boolean variable called SANDBOX and set it to True.
+A built-in parser will determine which token to use and make the adjustments for you.
+<br>
+<br>
+
+<mainheading>Compatibility with IEX cloud</mainheading>
+<div id='thickdivline'></div>
+<br>
+The name of the function shall be the name of the endpoint.
+The function shall accept all variables for a given endpoint using the same variable
+names per the documentation.
+<br>
+<br>
+Differences between IEX cloud documentation and this API should be considered errors.
+Please raise an issue if you notice discrepancies.
+<br>
+<br>
+Specific documentation for every IEX function is not available but a list <a href='function_list.html'><u>HERE</u></a> can show you
+what options there are and the IEX docs will give you a full run down of the parameters.
+In general, to set a parameter you can set the parameter name equal to the desired output.
+<br>
+<br>
+
+<mainheading>Contact</mainheading>
+<div id='thickdivline'></div>
+<br>
+If you would like to reach out, feel free to connect with me one of three ways:
+<br>
+<br>
+1. <a href='https://github.com/MichaelPHartmann'>On GitHub</a>
+<br>
+<br>
+2. <a href='https://www.linkedin.com/in/michael-hartmann/'>On LinkedIn</a>
+<br>
+<br>
+3. <a href='mailto:michaelpeterhartmann94@gmail.com'>Via Email</a>
+<br>
+<br>
+If there are issues, be it major or semantic, please open an issue on GitHub.
+<br>
+<br>
+</t>
+
+<!--FOOTER BEGINS HERE-->
+  <div id="thickdivline"></div>
+  <br>
+  <div class='topnav'>
+    <mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading>
+    <mainheading><a href='https://github.com/MichaelPHartmann'>GitHub // </a></mainheading>
+    <mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading>
+    <mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading>
+  </div>
+<!--FOOTER ENDS HERE-->
+</div>
