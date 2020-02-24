@@ -64,6 +64,12 @@ body, html {
   width: 80%;
   margin-left: 10%;
 }
+.arguments{
+  background-color: lightgrey;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
 
 /*Headings for all sites are below*/
 pageheading{
