@@ -40,11 +40,12 @@
 <div id='divline'></div>
 <br>
 <t>FinMesh is a python-based package that brings together financial data from various
-sources in one place for ease of use and distribution. The three main sections of
+sources in one place for ease of use and distribution. The four main sections of
 FinMesh are:
 (1) the <a href='https://iexcloud.io/docs/api/'>IEX REST API</a>,
-(2) data from the <a href='https://www.treasury.gov/resource-center/data-chart-center/digitalstrategy/pages/developer.aspx'>US treasury</a>, and
-(3) the data from the <a href='https://fred.stlouisfed.org/'>US Federal Reserve Economic Data</a>.
+(2) data from the <a href='https://www.treasury.gov/resource-center/data-chart-center/digitalstrategy/pages/developer.aspx'>US treasury</a>,
+(3) the data from the <a href='https://fred.stlouisfed.org/'>US Federal Reserve Economic Data</a>,
+(4) and data from the SEC's <a href='https://www.sec.gov/edgar/searchedgar/companysearch.html'>EDGAR</a> system.
 <br>
 <br>
 
@@ -97,28 +98,48 @@ A great article on how to do this on Mac is available here:
 <a href='https://natelandau.com/my-mac-osx-bash_profile/'>-->My Mac OSX Bash Profile<--</a>
 <br>
 <br>
-Click <a href='https://iexcloud.io/'><u>HERE</u></a> for your free IEX token.
-<br>
-This token must be stored as IEX_TOKEN in your environment variables.
-<br>
-<br>
-Click <a href='https://fred.stlouisfed.org/'><u>HERE</u></a> for your free FRED token.
-<br>
-This token must be stored as FRED_TOKEN in your environment variables.
-<br>
-<br>
-
-<mainheading>IEX Sandbox Mode</mainheading>
+<mainheading>IEX Functionality</mainheading>
 <div id='divline'></div>
 <br>
-Further, if you wish to make use of IEX's sandbox mode, you will need to create a couple
-more environment variables. You will first need to save your test token as
-IEX_SANDBOX_TOKEN and create a boolean variable called SANDBOX and set it to True.
+IEX offers a vast array of financial and economic data. The REST API brings in data from many third party
+vendors as well as primary exchange data from IEX itself. Available data ranges from sentiment to Forex, and
+commodities to standardized financial statements. If you are looking to gather data for simple or algorithmic
+analysis, this is the best place to start.
+<br>
+<br>
+An account is required to access the IEX API and most endpoints are only available to paid accounts.
+That said the lowest paid tier offers more than enough access for most individuals.
+In FinMesh, there are two main tokens that are used, a main key and a sandbox key.
+<br>
+<br>
+Further, if you wish to make use of IEX's sandbox mode, you will need to create a boolean variable called SANDBOX and set it to True.
 A built-in parser will determine which token to use and make the adjustments for you.
 <br>
 <br>
-
-<mainheading>Compatibility with IEX cloud</mainheading>
+The tokens should be stored in the following way as environment variables:
+<br>
+<br>
+IEX_TOKEN=YOURTOKENHERE
+<br>
+and
+<br>
+IEX_SANDBOX_TOKEN=YOURSANDBOXTOKENHERE
+<br>
+<br>
+<b><center>Click <a href='https://iexcloud.io/'><u>HERE</u></a> for your free IEX token.</center></b>
+<br>
+<mainheading>FRED Functionality</mainheading>
+<div id='divline'></div>
+<br>
+The Federal Reserve of Economic Data (also know as FRED) maintains all the national economic data such
+as housing starts, non-farm payroll, and GDP. The available data is the broad and it is recommended you use
+the website to find the information you are looking for and then query the API through FinMesh. You are able to list
+available data through FinMesh.
+<br>
+<br>
+<b><center>Click <a href='https://fred.stlouisfed.org/'><u>HERE</u></a> for your free FRED token.</center></b>
+<br>
+<mainheading>Compatibility with APIs</mainheading>
 <div id='divline'></div>
 <br>
 The name of the function shall be the name of the endpoint.
@@ -126,11 +147,11 @@ The function shall accept all variables for a given endpoint using the same vari
 names per the documentation.
 <br>
 <br>
-Differences between IEX cloud documentation and this API should be considered errors.
+Differences between API documentation and this package should be considered errors.
 Please raise an issue if you notice discrepancies.
 <br>
 <br>
-Specific documentation for every IEX function is not available but a list <a href='function_list.html'><u>HERE</u></a> can show you
+Specific documentation for every FinMesh function is not available but a list <a href='function_list.html'><u>HERE</u></a> can show you
 what options there are and the IEX docs will give you a full run down of the parameters.
 In general, to set a parameter you can set the parameter name equal to the desired output.
 <br>
