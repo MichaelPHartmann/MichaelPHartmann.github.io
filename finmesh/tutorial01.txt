@@ -1,0 +1,18 @@
+Outline:
+Introduce package
+  -> What data
+  -> Where is the data coming from
+  -> How is the data accessed
+Where to find package
+  -> GitHub
+  -> PIP and PYPI
+How to install package
+  -> PiP
+Setting up the package
+  -> environment variables (possibly other video??)
+Package modules
+  -> basic use cases for each module.
+  -> pull financial data from iex
+  -> pull fed rates from Fred
+  -> pull economic data from Fred
+  
