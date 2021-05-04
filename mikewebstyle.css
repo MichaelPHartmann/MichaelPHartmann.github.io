@@ -70,6 +70,13 @@ body, html {
   border-width: thin;
   border-color: black;
 }
+.code {
+  background-color: #cfc;
+  float: right;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
 /*Headings for all sites are below*/
 pageheading{
