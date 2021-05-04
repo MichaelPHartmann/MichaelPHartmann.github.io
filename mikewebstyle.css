@@ -70,7 +70,7 @@ body, html {
   border-width: thin;
   border-color: black;
 }
-.code {
+#code {
   background-color: #cfc;
   float: right;
   width: 80%;
