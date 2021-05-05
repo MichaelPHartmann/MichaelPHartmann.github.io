@@ -39,7 +39,7 @@ body, html {
 }
 .bottomnav{
   overflow: hidden;
-  margin-bottom: 2.5%;
+  margin-bottom: 5%;
   position: fixed;
   bottom: 0;
   width: 80%;
@@ -76,7 +76,7 @@ body, html {
   width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /*Headings for all sites are below*/
