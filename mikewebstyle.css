@@ -40,7 +40,6 @@ body, html {
 .bottomnav{
   overflow: hidden;
   margin-bottom: 5%;
-  position: fixed;
   bottom: 0;
   width: 80%;
 }
