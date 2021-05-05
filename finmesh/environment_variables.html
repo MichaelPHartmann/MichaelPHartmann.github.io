@@ -2,6 +2,7 @@
 <html>
 <title>Michael Hartmann // FinMesh</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link rel = "stylesheet" href = "https://michaelphartmann.github.io/mikewebstyle.css" />
 <head>
   <!-- Meta Description and Information -->
@@ -41,8 +42,50 @@
 <heading>A simple how-to guide for MacOS and Linux</heading>
 <br>
 <br>
+<t>
+Environment variables are used in FinMesh to store API tokens and token-related data.
+Tokens are like passwords that API providers use to authenticate the requests being made.
+This ensures that (1) unauthorized parties cannot access the data or spam the API with bogus requests (such as in DDOS attacks) and (2) users can track their useage and manage permissions.
+The IEX Cloud and FRED APIs both use tokens to authenticate users, and IEX in particular uses tokens to track useage and manage the level of services available.
+</t>
+<br>
+<br>
+<heading>Your Bash Profile</heading>
+<br>
+<br>
+<t>
+In these examples we will be setting <i>global</i> environment variables using the standard bash profiles available on both MacOS and Linux.
+You'll want to fire up a terminal window now so you can follow along.
+<br>
+<br>
+For Mac users, your bash profile is called '.bash_profile', pretty simple.
+When you open this, you'll likely find an empty file.
+<br>
+<br>
+For Linux users, your bash profile is called '.bashrc'.
+Depending on your distribution, you may or may not find some pre-made bash shortcuts and other assorted code inside, we don't need to worry about any of that right now.
+</t>
+<br>
+<br>
+<t>
+Your bash profile is stored in the User's home directory, this is the directory that a new terminal window will automatically open into so if you have just opened a new window, you're in the right place!
+This directory is most commonly denoted with a '~' before a '$'. If you have navigated into a folder, simply type 'cd' to return to the home directory.
+Now that you are in the correct directory lets open your bash profile using nano. Nano is simply a text editor that is built into terminal.
+Type this and then hit enter, adn you'll be taken to your bash profile.
+</t>
+<br>
+<br>
 <div id="code">
-<t>This is a demo box to illustrate the code given in thesitewizard.com's tutorial on creating coloured boxes.</t>
+<t>
+Mac:
+<br>
+nano .bash_profile
+<br>
+<br>
+Linux:
+<br>
+nano .bashrc
+</t>
 </div>
 <br>
 <br>
