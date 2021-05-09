@@ -28,7 +28,8 @@ grid-area: content;
 min-height: 70vh;
 }
 
-.resumesection{
+.parasection{
+	grid-area: content;
   margin-bottom: 2.5%;
 }
 
