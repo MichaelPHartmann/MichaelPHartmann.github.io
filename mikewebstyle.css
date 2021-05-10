@@ -3,7 +3,7 @@
 body {
 width: 95%;
 height: 100%;
-max-width: 1500px;
+max-width: 1250px;
 margin: 2em auto;
 
 }
@@ -30,7 +30,17 @@ min-height: 70vh;
 
 .parasection{
 	grid-area: content;
-  margin-bottom: 2.5%;
+  margin-bottom: 5%;
+}
+.codesection{
+	background-color: lightgrey;
+	border-style: solid;
+	border-color: black;
+	border-width: 2.5px;
+	grid-area: content;
+	padding: 2.5%;
+	margin-bottom: 5%;
+	width: 80%
 }
 
 /* Header and Footer Nav Bars */
@@ -123,6 +133,7 @@ border-style: solid;
 border-width: .5px;
 border-color: #000000;
 width: 100% - 1px;
+margin-bottom: 5%
 }
 
 #thickdivline{

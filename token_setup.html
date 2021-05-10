@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<!--HEAD BEGINS HERE-->
+<head>
+<!--Link to StyleSheet-->
+<link rel = "stylesheet" href = "mikewebstyle.css" />
+<!--Import Fonts from Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<!--Define Meta Characteristics-->
+<meta charset="utf-8" name="description" content="Business graduate with a specialization in finance and interests
+in programming Python and financial modelling.">
+<!--Google Analytics Setup-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154151262-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-154151262-1');
+</script>
+<!--Web Page Title-->
+<title>Michael Hartmann</title>
+</head>
+<!--HEAD ENDS HERE-->
+
+
+<body>
+<div class="container">
+<!--HEADER BEGINS HERE-->
+<header>
+<pageheading>Michael Hartmann</pageheading>
+<div id='thickdivline'></div>
+<headernav><mainheading><a href='index.html'>Home // </a></mainheading></headernav>
+<headernav><mainheading><a href='resume.html'>Resume // </a></mainheading></headernav>
+<headernav><mainheading><a href='finmesh/new_finmesh.html'>FinMesh // </a></mainheading></headernav>
+</header>
+<!--HEADER ENDS HERE-->
+
+<content>
+<div class='parasection'>
+<mainheading>FinMesh Environment Variables</mainheading>
+<div id='divline'></div>
+<t>
+Environment variables are used in FinMesh to store API tokens and token-related data.
+Tokens are like passwords that API providers use to authenticate the requests being made.
+This ensures that (1) unauthorized parties cannot access the data or spam the API with bogus requests (such as in DDOS attacks) and (2) users can track their useage and manage permissions.
+The IEX Cloud and FRED APIs both use tokens to authenticate users, and IEX in particular uses tokens to track useage and manage the level of services available.
+</t>
+</div>
+
+
+<div class='parasection'>
+<mainheading>Your Bash Profile</mainheading>
+<div id='divline'></div>
+<t>
+In these examples we will be setting <i>global</i> environment variables using the standard bash profiles available on both MacOS and Linux.
+You'll want to fire up a terminal window now so you can follow along.
+<br>
+<br>
+For Mac users, your bash profile is called '.bash_profile', pretty simple.
+When you open this, you'll likely find an empty file.
+<br>
+<br>
+For Linux users, your bash profile is called '.bashrc'.
+Depending on your distribution, you may or may not find some pre-made bash shortcuts and other assorted code inside, we don't need to worry about any of that right now.
+<br>
+<br>
+Your bash profile is stored in the User's home directory, this is the directory that a new terminal window will automatically open into so if you have just opened a new window, you're in the right place!
+This directory is most commonly denoted with a '~' before a '$'. If you have navigated into a folder, simply type 'cd' to return to the home directory.
+Now that you are in the correct directory lets open your bash profile using nano. Nano is simply a text editor that is built into terminal.
+Type this and then hit enter, and you'll be taken to your bash profile.
+</t>
+</div>
+
+<div class='codesection'>
+<c>
+Mac:
+<br>
+nano .bash_profile
+<br>
+<br>
+Linux:
+<br>
+nano .bashrc
+</c>
+</div>
+
+<div class='parasection'>
+<mainheading>Setting Up Your Token Variables</mainheading>
+<div id='divline'></div>
+<t>
+Now that you are ready to add some token variables,
+you can go ahead and collect them from IEX and/or FRED from the links at the beginning of this page.
+<br>
+<br>
+In the standard IEX_TOKEN variable, you'll want to paste your <i>PUBLIC</i> token from IEX.
+This way if you accidentally publish this code, or otherwise have the token compromised you can simply cut that token off from API privileges.
+You can of course use the secret key, but you are setting yourself up for a security vulnerability.
+<br>
+<br>
+The IEX_SANDBOX_TOKEN is also fairly self-explanatory. You can find this by switching to 'Sandbox Mode' in the IEX Console and looking where your regular tokens would normally be.
+<br>
+<br>
+The SANDBOX boolean variable will tell FinMesh whether you want to access Sandbox data instead of the real data.
+This is really useful when you are testing code and don't want to use credits.
+<br>
+<br>
+The FRED token is even more straight forward. There are no sandbox options and no public/private versions of keys.
+Simply paste in your token and you are good to go!
+<br>
+<br>
+Once you've written out the code below and filled in the blanks with the appropriate tokens, your bash profile is all set!
+</t>
+</div>
+<div class=codesection>
+<c>
+# FinMesh Token Setup
+<br>
+<br>
+# Public IEX Cloud Token
+<br>
+IEX_TOKEN=#PLACE-YOUR-TOKEN-HERE#
+<br>
+# Sandbox IEX Token
+<br>
+IEX_SANDBOX_TOKEN=#PLACE-YOUR-TOKEN-HERE#
+<br>
+# Sandbox State
+<br>
+SANBOX=False
+<br>
+# FRED Token
+<br>
+FRED_TOKEN=#PLACE-YOUR-TOKEN-HERE#
+</c>
+</div>
+
+<t>
+<div class='parasection'>
+You can now exit nano by hitting CTRL+O to writeout(save) your work and then CTRL+X to close the nano editor.
+Once you are back into the terminal, type the following to apply the changes to your environment.
+</t>
+</div>
+<div class='codesection'>
+<c>
+Mac:
+<br>
+source .bash_profile
+<br>
+<br>
+Linux:
+<br>
+source .bashrc
+</c>
+</div>
+
+
+
+<div class='parasection'>
+<mainheading>Conclusion</mainheading>
+<div id='divline'></div>
+</div>
+
+
+</content>
+
+<!--FOOTER BEGINS HERE-->
+<footer>
+<div id='thickdivline'></div>
+<footernav><mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading></footernav>
+<footernav><mainheading><a href='https://github.com/MichaelPHartmann'>GitHub // </a></mainheading></footernav>
+<footernav><mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading></footernav>
+<footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
+</footer>
+<!--FOOTER BEGINS HERE-->
+
+</body>
+
+</html>

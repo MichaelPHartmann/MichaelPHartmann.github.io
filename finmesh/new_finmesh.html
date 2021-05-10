@@ -38,10 +38,9 @@ gtag('config', 'UA-154151262-1');
 <!--HEADER ENDS HERE-->
 
 <content>
-<parasection>
+<div class='parasection'>
 <mainheading>FinMesh</mainheading>
 <div id='divline'></div>
-<br>
 <t>
 FinMesh is a python-based package that brings together financial data from various
 sources in one place for ease of use and distribution. The four main sections of
@@ -51,15 +50,7 @@ FinMesh are:
 (3) the data from the <a href='https://fred.stlouisfed.org/'>US Federal Reserve Economic Data</a>,
 (4) and data from the SEC's <a href='https://www.sec.gov/edgar/searchedgar/companysearch.html'>EDGAR</a> system.
 <br>
-</t>
-</parasection>
-
-
-<parasection>
-<mainheading>Purpose</mainheading>
-<div id='divline'></div>
 <br>
-<t>
 The purpose of this package and its sub-packages was originally to practice interacting
 with API data. With third-party API packages there is always the risk of outages or bugs.
 In building the original IEX wrapper we sought to build something easy to understand and use,
@@ -74,31 +65,22 @@ In the future, this package will be updated with new financial and economic APIs
 <br>
 If you know of a low or no cost API that could be incorporated
 please raise it as an issue and we will work to have it done ASAP.
-<br>
 </t>
-</parasection>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>Installation</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 FinMesh is available publicly from <a href='https://pypi.org/project/FinMesh/'><u>PYPI</u></a>
 and can be installed and updated through a command line pip. Because the package is still growing
 and changing be sure to update often or check the <a href='https://pypi.org/project/FinMesh/'>PYPI</a> page for possible updates.
 <br>
 <br>
-The following dependencies are used in FinMesh:
-<br>
-- OS
-<br>
-- CSV
-<br>
-- JSON
-<br>
-- Requests
-<br>
-- xmltodict
+There are several dependencies used in FinMesh, that soid, most of the package is built
+to be as stand-alone as possible. Most of the dependencies used are fairly standard, and you will be
+prompted to install when neccesary.
 <br>
 <br>
 Some APIs require authentication through the use of tokens. These tokens should be
@@ -107,13 +89,14 @@ A great article on how to do this on Mac is available here:
 <br>
 <br>
 <a href='https://natelandau.com/my-mac-osx-bash_profile/'>-->My Mac OSX Bash Profile<--</a>
-</parasection>
+</t>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>IEX Functionality</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 IEX offers a vast array of financial and economic data. The REST API brings in data from many third party
 vendors as well as primary exchange data from IEX itself. Available data ranges from sentiment to Forex, and
 commodities to standardized financial statements. If you are looking to gather data for simple or algorithmic
@@ -140,13 +123,14 @@ IEX_SANDBOX_TOKEN=YOURSANDBOXTOKENHERE
 <br>
 <br>
 <b><center>Click <a href='https://iexcloud.io/'><u>HERE</u></a> for your free IEX token.</center></b>
-</parasection>
+</t>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>FRED Functionality</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 The Federal Reserve of Economic Data (also know as FRED) maintains all the national economic data such
 as housing starts, non-farm payroll, and GDP. The available data is the broad and it is recommended you use
 the website to find the information you are looking for and then query the API through FinMesh. You are able to list
@@ -154,13 +138,14 @@ available data through FinMesh.
 <br>
 <br>
 <b><center>Click <a href='https://fred.stlouisfed.org/'><u>HERE</u></a> for your free FRED token.</center></b>
-</parasection>
+</t>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>EDGAR Functionality</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 The EDGAR system is the Security and Exchange Commission's database of all corporate filings including
 10-Ks, change in ownership statements, and acquisition disclosures. The website is quite user friendly
 while programatic data colllection adds several layers of complexity. In it's current iteration, FinMesh
@@ -170,13 +155,14 @@ xbrli, and in some cases, xlsx filing information.
 <br>
 In the future the goal is to have complete, sanitized, and standardized information available for download in a csv or xlsx
 format for any document and every stock.
-</parasection>
+</t>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>Compatibility with APIs</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 The name of the function shall be the name of the endpoint.
 The function shall accept all variables for a given endpoint using the same variable
 names per the documentation.
@@ -189,13 +175,14 @@ Please raise an issue if you notice discrepancies.
 Specific documentation for every FinMesh function is not available but a list <a href='new_function_list.html'><u>HERE</u></a> can show you
 what options there are and the IEX docs will give you a full run down of the parameters.
 In general, to set a parameter you can set the parameter name equal to the desired output.
-</parasection>
+</t>
+</div>
 
 
-<parasection>
+<div class='parasection'>
 <mainheading>Contact</mainheading>
 <div id='divline'></div>
-<br>
+<t>
 If you would like to reach out, feel free to connect with me one of three ways:
 <br>
 <br>
@@ -209,7 +196,7 @@ If you would like to reach out, feel free to connect with me one of three ways:
 <br>
 <br>
 If there are issues, be it major or semantic, please open an issue on GitHub.
-</parasection>
+</div>
 </t>
 </content>
 
