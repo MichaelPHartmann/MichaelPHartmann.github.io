@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <!--HEAD BEGINS HERE-->
 <!--HEAD ENDS HERE-->
-<body>
 
+<body>
 <div class="container">
 
 <!--HEADER BEGINS HERE-->
@@ -17,6 +18,5 @@
 <!--FOOTER ENDS HERE-->
 
 </div>
-
 </body>
 </html>

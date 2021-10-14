@@ -8,4 +8,5 @@
 <!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/coffee/coffeehome.html'>Coffee // </a></mainheading></headernav> -->
 <!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/blog/bloghome.html'>Blog // </a></mainheading></headernav> -->
 </header>
+This is a test of the paint header function
 <!--HEADER ENDS HERE-->
