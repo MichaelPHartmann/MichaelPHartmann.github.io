@@ -1,4 +1,5 @@
 <!--FOOTER BEGINS HERE-->
+
 <footer>
 <div id='thickdivline'></div>
 <footernav><mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading></footernav>
@@ -6,4 +7,5 @@
 <footernav><mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading></footernav>
 <footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
 </footer>
+
 <!--FOOTER BEGINS HERE-->

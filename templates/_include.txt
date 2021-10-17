@@ -1,1 +1,4 @@
-testpage.html
+index.html
+resume.html
+coffee/coffeehome.html
+blog/bloghome.html

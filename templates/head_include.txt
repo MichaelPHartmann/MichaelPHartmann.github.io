@@ -1,4 +1,5 @@
 <!--HEAD BEGINS HERE-->
+
 <head>
 <!--Link to StyleSheet-->
 <link rel = "stylesheet" href = "https://michaelphartmann.github.io/mikewebstyle.css" />
@@ -19,4 +20,5 @@ gtag('config', 'UA-154151262-1');
 <!--Web Page Title-->
 <title>Michael Hartmann</title>
 </head>
+
 <!--HEAD ENDS HERE-->
