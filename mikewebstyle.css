@@ -1,11 +1,8 @@
-
-
 body {
 width: 95%;
 height: 100%;
 max-width: 1250px;
 margin: 2em auto;
-
 }
 
 .container {
@@ -23,6 +20,8 @@ padding: 10px;
 
 }
 
+
+
 content {
 grid-area: content;
 min-height: 70vh;
@@ -32,6 +31,7 @@ min-height: 70vh;
 	grid-area: content;
   margin-bottom: 5%;
 }
+
 .codesection{
 	background-color: lightgrey;
 	border-style: solid;
