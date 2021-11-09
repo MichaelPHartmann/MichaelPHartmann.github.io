@@ -121,4 +121,4 @@ class paintElements():
 
 if __name__ == '__main__':
     p = paintElements()
-    p.paint_headers()
+    p.paint_all()

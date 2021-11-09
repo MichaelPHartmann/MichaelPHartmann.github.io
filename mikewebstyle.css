@@ -14,7 +14,7 @@ grid-template-areas:
 "header"
 "content"
 "footer";
-grid-gap: 5%;
+grid-gap: 1%;
 grid-template-rows: auto 1fr auto;
 grid-template-columns: 100%;
 }
