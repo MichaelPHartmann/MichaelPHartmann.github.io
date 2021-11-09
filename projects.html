@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+<!--HEAD BEGINS HERE-->
+<head>
+<!--Link to StyleSheet-->
+<link rel = "stylesheet" href = "mikewebstyle.css" />
+<!--Import Fonts from Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<!--Define Meta Characteristics-->
+<meta charset="utf-8" name="description" content="Business graduate with a specialization in finance and interests
+in programming Python and financial modelling.">
+<!--Google Analytics Setup-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154151262-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-154151262-1');
+</script>
+<!--Web Page Title-->
+<title>Michael Hartmann | Projects</title>
+</head>
+<!--HEAD ENDS HERE-->
+
+<body>
+<div class="container">
+
+<!--HEADER BEGINS HERE-->
+
+<header>
+<pageheading>Michael Hartmann</pageheading>
+<div id='thickdivline'></div>
+<headernav><mainheading><a href='https://michaelphartmann.github.io/index.html'>Home // </a></mainheading></headernav>
+<headernav><mainheading><a href='https://michaelphartmann.github.io/resume.html'>Resume // </a></mainheading></headernav>
+<headernav><mainheading><a href='https://finmesh.readthedocs.io/en/latest/'>FinMesh // </a></mainheading></headernav>
+<!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/coffee/coffeehome.html'>Coffee // </a></mainheading></headernav> -->
+<!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/blog/bloghome.html'>Blog // </a></mainheading></headernav> -->
+</header>
+
+<!--HEADER ENDS HERE-->
+
+<content>
+
+<div class='parasection'>
+<h2><a href='https://github.com/MichaelPHartmann/FinMesh'><mainheading>FinMesh</mainheading></a></h2>
+<div id="divline"></div>
+<h3><heading>A Python API wrapper for various financial APIs.</heading></h3>
+<br>
+<br>
+<t>
+FinMesh is a python-based package that brings together financial data from various sources in one place for ease of use and distribution.
+The four main sections of FinMesh are
+(1) the IEX REST API,
+(2) data from the US treasury,
+(3) data from the US Federal Reserve Economic Data, and
+(4) data from the SECs EDGAR system.
+<br>
+<br>
+I have written all about this project in multiple locations, so I'll spare the details here.
+<br>
+<br>
+If you can read all about FinMesh by clicking the title above, or by clicking the link in the navigation bar which will bring you to the ReadTheDocs page for FinMesh.
+<br>
+<br>
+You can `pip install FinMesh` if you want to try it out for yourself.
+</t>
+</div>
+
+<div class='parasection'>
+<h2><a href='https://github.com/MichaelPHartmann/website_element_painter'><mainheading>Website Element Painter</mainheading></a></h2>
+<div id="divline"></div>
+<h3><heading>A small Python add-on for people that manage their own HTML-based websites.</heading></h3>
+<br>
+<br>
+<t>
+I was tired of making sure all my head, header, and footer elements matched across web pages.
+When I started searching for solutions I found plenty of people that had come up on this issue but not many that offered a satisfactory solution.
+Turns out that with vanilla HTML and CSS, what I was looking for was impossible.
+<br>
+<br>
+There are options - yes. You have PHP, but that is server side and with my website being hosted on GitHub for now, that's not an option.
+Javascript and html_include is probably the best option out there for this, and it is probably better than this solution.
+That said, Javascript adds weight and reliability issues that I'm not sure I want to deal with.
+<br>
+<br>
+So I wrote this little script to automate the update of headers, footers, and heads.
+It is dead simple, and relies on a human marking each of their pages with HTML comments.
+The thing is, it's simple to understand, all the processing is done locally with the developer (me), so mistakes are caught immediately and before they are published, and all my webpages remain plain HTML and CSS for maximum speed.
+<br>
+<br>
+You can read a little more and view the code by clicking the title above.
+</t>
+</div>
+
+<div class='parasection'>
+<h2><a href='https://github.com/MichaelPHartmann/egdar_filings_scraper'><mainheading>EDGAR Filings Scraper</mainheading></a></h2>
+<h3><div id="divline"></div>
+<heading>A Node.js scraper for the SEC EDGAR database.</heading></h3>
+<br>
+<br>
+<t>
+I originally created a website scraper as part of an Ania Kubow tutorial, and was wanting to customize and extend the functionality a bit.
+I didn't find many examples on services like Rapid API so I figured I would give it a go.
+I had already worked with the EDGAR system extensively in Python so I was familiar with it.
+<br>
+<br>
+This API supports gathering (1) the most recent filings for all US-based companies,
+(2) the most recent filings for a particular filing organization, and
+(3) the most recent filings of a certain type for a particular filing organization.
+<br>
+<br>
+You can read a little more and view the code by clicking the title above.
+</t>
+</div>
+
+<div class='parasection'>
+<h2><a href=''><mainheading>Recipe Building, Filing, Editing, and Displaying</mainheading></a></h2>
+<div id="divline"></div>
+<h3><heading>A Python-based project for managing recipes.</heading></h3>
+<br>
+<br>
+<t>
+Every time I try to make a plan for the week's meals I alwasy seem to spend a lot of time Googling
+Most of the time I'm Googling recipes that I've made a couple times, but forget what ingredients I need.
+It takes time, is annoying, and most of all, its unreliable, as there have been times where I can;t find the recipe I used previously.
+<br>
+<br>
+This is a project to help with that.
+Originally I wanted to just make a recipe randomizer, where I can store recipe URLs and then select them at random.
+What this turned into was a way to build, edit, and store recipes in a standard JSON format.
+This is still a work in progress.
+<br>
+<br>
+<subheading> What's Done:</subheading>
+<li>Adding new recipes with sections for ingredients, instructions, and notes</li>
+<li>Editing recipes already in the database</li>
+<br>
+<subheading>What's Next:</subheading>
+<li>Viewing recipes in the command line or on a local-hosted website</li>
+<li>Automated scraping of recipe websites to streamline recipe addition</li>
+<li>Cloud storage for recipe database</li>
+<li>An app to manage recipes from</li>
+</t>
+</div>
+
+</content>
+
+<!--FOOTER BEGINS HERE-->
+<footer>
+<div id='thickdivline'></div>
+<footernav><mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading></footernav>
+<footernav><mainheading><a href='https://github.com/MichaelPHartmann'>GitHub // </a></mainheading></footernav>
+<footernav><mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading></footernav>
+<footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
+</footer>
+<!--FOOTER ENDS HERE-->
+
+</div>
+</body>
+</html>

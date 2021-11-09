@@ -1,4 +1,5 @@
 index.html
 resume.html
+projects.html
 coffee/coffeehome.html
 blog/bloghome.html

@@ -18,7 +18,7 @@ gtag('js', new Date());
 gtag('config', 'UA-154151262-1');
 </script>
 <!--Web Page Title-->
-<title>Michael Hartmann</title>
+<h1><title>Michael Hartmann</title></h1>
 </head>
 
 <!--HEAD ENDS HERE-->
