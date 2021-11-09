@@ -50,9 +50,6 @@ class paintElements():
                 for line in lines:
                     f.write(line)
 
-
-
-
     def paint_footers(self):
         """
             Crawl directories for webpages. Possibly have a '_include.py' file to streamline this.
@@ -116,6 +113,11 @@ class paintElements():
                 self.erase_file(f)
                 for line in lines:
                     f.write(line)
+
+    def paint_all(self):
+        self.paint_head()
+        self.paint_headers()
+        self.paint_footers()
 
 if __name__ == '__main__':
     p = paintElements()
