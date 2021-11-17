@@ -8,4 +8,4 @@
 <footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
 </footer>
 
-<!--FOOTER BEGINS HERE-->
+<!--FOOTER ENDS HERE-->
