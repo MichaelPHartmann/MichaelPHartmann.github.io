@@ -1,6 +1,5 @@
 class paintElements():
 
-
     def __init__(self):
         self._include = 'templates/_include.txt'
         self.include_pages()
@@ -15,7 +14,6 @@ class paintElements():
             for file in include:
                 output.append(file.strip('\n'))
         self.include_pages = output
-
 
     def erase_file(self, file):
         file.seek(0)
@@ -125,5 +123,4 @@ class paintElements():
         self.paint_footers()
 
 if __name__ == '__main__':
-    p = paintElements()
-    p.paint_all()
+    p = paintElements().paint_all()
