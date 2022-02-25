@@ -1,16 +1,24 @@
 <!--HEAD BEGINS HERE-->
 
 <head>
+
 <!--Link to StyleSheet-->
 <link rel = "stylesheet" href = "https://michaelphartmann.github.io/mikewebstyle.css" />
+
 <!--Import Fonts from Google Fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
 <!--Define Meta Characteristics-->
 <meta charset="utf-8" name="description" content="Business graduate with a specialization in finance and interests
 in programming Python and financial modelling.">
+
+<!--javascript source-->
+<script src="painter.js"></script>
+
 <!--Web Page Title-->
 <h1><title>Michael Hartmann</title></h1>
+
 </head>
 
 <!--HEAD ENDS HERE-->
