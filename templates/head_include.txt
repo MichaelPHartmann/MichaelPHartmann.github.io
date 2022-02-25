@@ -1,6 +1,6 @@
 <!--HEAD BEGINS HERE-->
 
-<head>
+<head id="head">
 
 <!--Link to StyleSheet-->
 <link rel = "stylesheet" href = "https://michaelphartmann.github.io/mikewebstyle.css" />

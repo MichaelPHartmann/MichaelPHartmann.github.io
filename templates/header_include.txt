@@ -1,6 +1,6 @@
 <!--HEADER BEGINS HERE-->
 
-<header>
+<header id="header">
 <pageheading>Michael Hartmann</pageheading>
 <div id='thickdivline'></div>
 <headernav><mainheading><a href='https://michaelphartmann.github.io/index.html'>Home // </a></mainheading></headernav>
