@@ -17,7 +17,7 @@ in programming Python and financial modelling.">
 <script src="painter.js"></script>
 
 <!--Web Page Title-->
-<h1><title>Michael Hartmann</title></h1>
+<title>Michael Hartmann</title>
 
 </head>
 
