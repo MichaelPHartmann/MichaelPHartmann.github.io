@@ -3,3 +3,4 @@ resume.html
 projects.html
 coffee/coffeehome.html
 blog/bloghome.html
+templates/website_template_web.html
