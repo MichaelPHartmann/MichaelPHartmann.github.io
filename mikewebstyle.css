@@ -46,20 +46,39 @@ padding-right: 2.5%;
 
 
 /* Paragraph sections */
-.parasection{
+.parasection, .blog-section{
 	grid-area: content;
   margin-bottom: 5%;
 }
-
-.blogsection{
-	grid-area: content;
-	width: 25vw;
-	height: 25vw;
-	background-color: red;
-	border: 5px solid black;
-	border-radius: 10px;
+.blog-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.blog-section,
+.blog-sidebar {
+  padding: 15px;
+  background-color: #fff;
+}
+.blog-section {
+	width: 70%;
+	height: 150vh;
+}
+.blog-sidebar{
+	width: 22%;
+  height: 25vh;
+	border: 3px solid black;
+	border-radius: 5px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5%;
 }
 
+.sidebar-btn {
+	background-color: white;
+	width: 100%;
+	border: 3px solid black;
+	border-radius: 5px;
+}
 
 /*General Headings and Text for All Pages*/
 

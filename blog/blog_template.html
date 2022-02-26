@@ -2,33 +2,36 @@
 
 <html>
 <!--HEAD BEGINS HERE-->
-<head>
+
+<head id="head">
+
 <!--Link to StyleSheet-->
-<link rel = "stylesheet" href = "https://michaelphartmann.github.io/mikewebstyle.css" />
+<link rel = "stylesheet" href = "mikewebstyle.css" />
+
 <!--Import Fonts from Google Fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
 <!--Define Meta Characteristics-->
 <meta charset="utf-8" name="description" content="Business graduate with a specialization in finance and interests
 in programming Python and financial modelling.">
-<!--Google Analytics Setup-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154151262-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-154151262-1');
-</script>
+
+<!--javascript source-->
+<script src="painter.js"></script>
+
 <!--Web Page Title-->
 <title>Michael Hartmann</title>
+
 </head>
+
 <!--HEAD ENDS HERE-->
 
 
 <body>
 <div class="container">
 <!--HEADER BEGINS HERE-->
-<header>
+
+<header id="header">
 <pageheading>Michael Hartmann</pageheading>
 <div id='thickdivline'></div>
 <headernav><mainheading><a href='https://michaelphartmann.github.io/index.html'>Home // </a></mainheading></headernav>
@@ -36,21 +39,35 @@ gtag('config', 'UA-154151262-1');
 <headernav><mainheading><a href='https://finmesh.readthedocs.io/en/latest/'>FinMesh // </a></mainheading></headernav>
 <!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/coffee/coffeehome.html'>Coffee // </a></mainheading></headernav> -->
 <!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/blog/bloghome.html'>Blog // </a></mainheading></headernav> -->
+<headernav><mainheading><a href='https://michaelphartmann.github.io/projects.html'>Projects // </a></mainheading></headernav>
 </header>
+
 <!--HEADER ENDS HERE-->
 
-<content>
-<!--PAGE CONTENT GOES HERE-->
+<script src="javascript.js" charset="utf-8"></script>
+<content class="blog-wrapper">
+  <div class="blog-sidebar">
+    <heading>This is the sidebar!<heading>
+      <button class="sidebar-btn" name="top-btn"><t>I'm a Button</t></button>
+  </div>
+
+  <section class="blog-section">
+      <heading>Blog Post Heading</heading>
+      <div id="divline"></div>
+      <t>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</t>
+  </section>
 </content>
 
 <!--FOOTER BEGINS HERE-->
-<footer>
+
+<footer id="footer">
 <div id='thickdivline'></div>
 <footernav><mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading></footernav>
 <footernav><mainheading><a href='https://github.com/MichaelPHartmann'>GitHub // </a></mainheading></footernav>
 <footernav><mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading></footernav>
 <footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
 </footer>
+
 <!--FOOTER ENDS HERE-->
 </div>
 </body>
