@@ -3,9 +3,9 @@ class paintElements():
     def __init__(self):
         self._include = 'templates/_include.txt'
         self.include_pages()
-        self.header_include = 'templates/header_include.txt'
-        self.footer_include = 'templates/footer_include.txt'
-        self.head_include = 'templates/head_include.txt'
+        self.header_include = 'templates/header_include.html'
+        self.footer_include = 'templates/footer_include.html'
+        self.head_include = 'templates/head_include.html'
 
     def include_pages(self):
         output = []
