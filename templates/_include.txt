@@ -1,4 +1,3 @@
 index.html
 resume.html
-projects.html
 templates/website_template_web.html
