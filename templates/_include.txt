@@ -1,3 +1,4 @@
 index.html
 resume.html
+about.html
 templates/website_template_web.html
