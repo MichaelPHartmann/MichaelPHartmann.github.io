@@ -44,44 +44,13 @@ grid-area: footer;
 padding-right: 2.5%;
 }
 
-
 /* Paragraph sections */
-.parasection, .blog-section{
+.parasection {
 	grid-area: content;
   margin-bottom: 5%;
 }
-.blog-wrapper {
-	display: flex;
-	justify-content: space-between;
-}
-.blog-section,
-.blog-sidebar {
-  padding: 15px;
-  background-color: #fff;
-}
-.blog-section {
-	width: 70%;
-	height: 150vh;
-}
-.blog-sidebar{
-	width: 22%;
-  height: 25vh;
-	border: 3px solid black;
-	border-radius: 5px;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 5%;
-}
-
-.sidebar-btn {
-	background-color: white;
-	width: 100%;
-	border: 3px solid black;
-	border-radius: 5px;
-}
 
 /*General Headings and Text for All Pages*/
-
 pageheading{
 font-size: 50px;
 letter-spacing: 4px;
@@ -117,7 +86,6 @@ font-family: 'Inconsolata', monospace;
 }
 
 /*Link Text Styling*/
-
 header a:link{
 color: black;
 text-decoration: none;
@@ -143,7 +111,7 @@ color: gray;
 text-decoration: none;
 }
 
-
+/* Line Breaks */
 #divline{
 border-style: solid;
 border-width: .5px;
@@ -151,7 +119,6 @@ border-color: #000000;
 width: 100% - 1px;
 margin-bottom: 2.5%
 }
-
 #thickdivline{
 	border-style: solid;
 	border-width: 1px;
