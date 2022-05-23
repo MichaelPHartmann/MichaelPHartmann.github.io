@@ -4,10 +4,17 @@
 <!--HEAD BEGINS HERE-->
 
 <head>
+<!--
+They say a jack-of-all-trades but master of none is still better than a master of one.
+In all of my pursuits I found common threads that drew me in:
+- a chance to solve challenging problems
+- opportunity to learn something new.
+
+If you're hiring, send me a message!
+-->
 
 <!--Define Meta Characteristics-->
-<meta charset="utf-8" name="description" content="Business graduate with a specialization in finance and interests
-in programming Python and financial modelling.">
+<meta charset="utf-8" name="description" content="Software + Finance + Coffee">
 
 <!-- Define Language -->
 <meta http-equiv="content-language" content="en-ca">
@@ -15,16 +22,20 @@ in programming Python and financial modelling.">
 <!-- Initialize Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Load Favicon -->
+<link rel="preload" href="//michaelphartmann.github.io/background/favicon-32x32.png" as="icon" >
+<link rel="icon" href="//michaelphartmann.github.io/background/favicon-32x32.png">
+
 <!--Web Page Title-->
 <title>Michael Hartmann</title>
 
 <!--Link to StyleSheet-->
-<link rel="preload" href="https://michaelphartmann.github.io/mikewebstyle.css" as="style">
-<link rel="stylesheet" href="https://michaelphartmann.github.io/mikewebstyle.css" />
+<link rel="preload" href="//michaelphartmann.github.io/mikewebstyle.css" as="style" >
+<link rel="stylesheet" href="//michaelphartmann.github.io/mikewebstyle.css" >
 
 <!--Import Fonts from Google Fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" />
+<link rel="preconnect" href="//fonts.gstatic.com" >
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" >
 
 </head>
 
@@ -37,11 +48,12 @@ in programming Python and financial modelling.">
 
 <header>
 <pageheading>Michael Hartmann</pageheading>
-<div id='thickdivline'></div>
-<headernav><mainheading><a href='https://michaelphartmann.github.io/index.html'>Home // </a></mainheading></headernav>
-<headernav><mainheading><a href='https://michaelphartmann.github.io/resume.html'>Resume // </a></mainheading></headernav>
-<headernav><mainheading><a href='https://finmesh.readthedocs.io/en/latest/'>FinMesh // </a></mainheading></headernav>
-<!-- <headernav><mainheading><a href='https://michaelphartmann.github.io/projects.html'>Projects // </a></mainheading></headernav> -->
+<div id="thickdivline"></div>
+<headernav><mainheading><a href="//michaelphartmann.github.io/index.html">Home // </a></mainheading></headernav>
+<headernav><mainheading><a href="//michaelphartmann.github.io/resume.html">Resume // </a></mainheading></headernav>
+<headernav><mainheading><a href="//finmesh.readthedocs.io/en/latest/">FinMesh // </a></mainheading></headernav>
+<headernav><mainheading><a href="//michaelphartmann.github.io/projects.html">Projects // </a></mainheading></headernav>
+<headernav><mainheading><a href="//michaelphartmann.github.io/about.html">About // </a></mainheading></headernav>
 </header>
 
 <!--HEADER ENDS HERE-->
@@ -72,28 +84,6 @@ If you can read all about FinMesh by clicking the title above, or by clicking th
 You can `pip install FinMesh` if you want to try it out for yourself.
 </t>
 </div>
-
-<!-- <div class='parasection'>
-<h2><a href='https://github.com/MichaelPHartmann/Visual-Finance'><mainheading>Visual Finance</mainheading></a></h2>
-<div id="divline"></div>
-<h3><heading>A visual application for using IEX Cloud without code.</heading></h3>
-<br>
-<br>
-<t>
-This is a web-app for accessing and assessing data from IEX Cloud. It can be difficult to find quality financial data online for personal use.
-This application will allow you to create portfolios and watchlists.
-Most importantly it will be a portal to download data in a customozable format for use in Excel and other places.
-IEX Cloud is relatively inexpensive compared to other sources such as Morningstar, so this could be extremely useful for students and hobbyists.
-<br>
-<br>
-The back-end is built on an SQLite database, with a custom Python query builder and interface.
-There is also a JavaScript API that the front end will use directly.
-The front end will be built in Django, with full support for profiles and downloads.
-<br>
-<br>
-You can read a little more and view the code by clicking the title above.
-</t>
-</div> -->
 
 <div class='parasection'>
 <h2><a href='https://github.com/MichaelPHartmann/website_element_painter'><mainheading>Website Element Painter</mainheading></a></h2>
@@ -142,43 +132,6 @@ You can read a little more and view the code by clicking the title above.
 </t>
 </div>
 
-<!-- <div class='parasection'>
-<h2><a href='https://github.com/MichaelPHartmann/Recipe_Builder'><mainheading>Recipe Building, Filing, Editing, and Displaying</mainheading></a></h2>
-<div id="divline"></div>
-<h3><heading>A Python-based project for managing recipes.</heading></h3>
-<br>
-<br>
-<t>
-Every time I try to make a plan for the week's meals I alwasy seem to spend a lot of time Googling
-Most of the time I'm Googling recipes that I've made a couple times, but forget what ingredients I need.
-It takes time, is annoying, and most of all, its unreliable, as there have been times where I can;t find the recipe I used previously.
-<br>
-<br>
-This is a project to help with that.
-Originally I wanted to just make a recipe randomizer, where I can store recipe URLs and then select them at random.
-What this turned into was a way to build, edit, and store recipes in a standard JSON format.
-This is still a work in progress.
-<br>
-<br>
-Turns out that the day after I put this on my website, a similar recipe search engine popped up.
-It scrapes, but does not reformat recipes to be uniform and saving favourites looks like it is not a feature.
-My project may be put on the back burner then!
-That project is <a href='https://stovetop.app/'>HERE:</a>
-<br>
-<br>
-<subheading> What's Done:</subheading>
-<li>Adding new recipes with sections for ingredients, instructions, and notes</li>
-<li>Editing recipes already in the database</li>
-<li>GET requests to a localhost with endpoints for displaying a list of recipes or a single recipe</li>
-<br>
-<subheading>What's Next:</subheading>
-<li>Viewing recipes in the command line or on a local-hosted website</li>
-<li>Automated scraping of recipe websites to streamline recipe addition</li>
-<li>Cloud storage for recipe database</li>
-<li>An app to manage recipes from</li>
-</t>
-</div> -->
-
 <div class='parasection'>
 <h2><a href='https://github.com/MichaelPHartmann/MichaelPHartmann.github.io'><mainheading>This Website</mainheading></a><h2>
 <div id="divline"></div>
@@ -202,11 +155,11 @@ You can of course just inspect this page with your browser's inspect tool, but i
 <!--FOOTER BEGINS HERE-->
 
 <footer>
-<div id='thickdivline'></div>
-<footernav><mainheading><a href='https://www.linkedin.com/in/michael-hartmann/'>LinkedIn // </a></mainheading></footernav>
-<footernav><mainheading><a href='https://github.com/MichaelPHartmann'>GitHub // </a></mainheading></footernav>
-<footernav><mainheading><a href='mailto:michaelpeterhartmann94@gmail.com'>Email // </a></mainheading></footernav>
-<footernav><mainheading><a href='https://www.instagram.com/michaelpeterhartmann/'>Instagram // </a></mainheading></footernav>
+<div id="thickdivline"></div>
+<footernav><mainheading><a href="//www.linkedin.com/in/michael-hartmann/">LinkedIn // </a></mainheading></footernav>
+<footernav><mainheading><a href="//github.com/MichaelPHartmann">GitHub // </a></mainheading></footernav>
+<footernav><mainheading><a href="mailto:michaelpeterhartmann94@gmail.com">Email // </a></mainheading></footernav>
+<footernav><mainheading><a href="www.instagram.com/michaelpeterhartmann/">Instagram // </a></mainheading></footernav>
 </footer>
 
 <!--FOOTER ENDS HERE-->
