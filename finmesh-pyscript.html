@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>FinMesh x PyScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - FinMesh
+      - pandas
+      - requests
+    </py-env>
+  </head>
+  <body>
+    <py-script>
+from FinMesh import iex
+stock = iex.IEXStock('AAPL', external='pk_b598c475485447109ff688540c168c8d')
+print(stock.price())
+    </py-script>
+  </body>
+</html>
