@@ -1,0 +1,40 @@
+/* Page Specific */
+@media only screen and (max-width: 1000px) {
+	html, body {
+		height: unset;
+		overflow: scroll;
+	}
+	#hero-left {
+		width: 90%;
+	}
+	#hero-right {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	html, body {
+		height: 100%;
+		overflow: hidden;
+	}
+	#hero-left {
+		width: 50%;
+	}
+	#hero-right {
+		width: 45%;
+	}
+}
+#hero-left {
+	text-align: left;
+}
+#hero-right {
+	margin-left: 5%;
+}
+.hero-frame {
+	border: 5px solid black;
+	margin-top: 10%;
+	max-height: 600px;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
