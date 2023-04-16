@@ -1,16 +1,6 @@
 html, body {
 	background-color: #f1f1f1;
 }
-/* This wraps header, content, and footer */
-#page-container {
-	width: 90%;
-	padding-left: 5%;
-	margin: 0;
-	color: black;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
 
 /* Styling for macro page sections */
 header, footer {
@@ -65,16 +55,35 @@ h2 {
 	font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
 }
+h3 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	font-weight: 350;
+	font-family: 'Montserrat', sans-serif;
+}
+h4 {
+	line-height: 0.25;
+	font-size: 18px;
+	letter-spacing: 3px;
+	font-weight: 350;
+	font-family: 'Montserrat', sans-serif;
+}
 .navbar-font {
 	font-size: 25px;
 	letter-spacing: 4px;
-	font-weight:400;
+	font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
 }
 p {
 	font-size: 15px;
 	letter-spacing: 2px;
-	font-weight: 400;
+	font-weight: 350;
+	font-family: 'Montserrat', sans-serif;
+}
+li {
+	font-size: 15px;
+	letter-spacing: 2px;
+	font-weight: 350;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -92,8 +101,15 @@ color: gray;
 text-decoration: none;
 }
 
-#thickdivline{
+.divline{
+border-style: solid;
+border-width: .5px;
+width: 100% - 1px;
+margin-bottom: 2.5%
+}
+.thickdivline{
 border-style: solid;
 border-width: 1px;
 width: 100% - 1px;
+margin-bottom: 2.5%
 }

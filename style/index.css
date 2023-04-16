@@ -1,3 +1,13 @@
+/* This wraps header, content, and footer */
+#hero-container {
+	width: 90%;
+	padding-left: 5%;
+	margin: 0;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 /* Page Specific */
 @media only screen and (max-width: 1000px) {
 	html, body {
