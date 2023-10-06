@@ -23,12 +23,13 @@ If you're hiring, send me a message!
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
 
 <!-- Load Favicon -->
-<link rel="icon" href="//michaelphartmann.github.io/background/favicon-32x32.png">
+<link rel="icon" href="./images/favicon-32x32.png">
 
-<!--Import Fonts from Google Fonts-->
-<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" >
+<!-- Preload Fonts from Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="./main.css" >
+<!-- Load Stylesheet -->
+<link rel="stylesheet" href="style/main.css" >
 
 <!--Web Page Title-->
 <title>Michael Hartmann</title>
@@ -42,7 +43,7 @@ If you're hiring, send me a message!
 		<div id="page-container">
 
 			<!--HEADER BEGINS HERE-->
-			<iframe src="./header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+			<iframe src="./common/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
 			<!--HEADER ENDS HERE-->
 
 			<!-- CONTENT BEGINS HERE -->
@@ -50,24 +51,24 @@ If you're hiring, send me a message!
 				<div id="tabs">
 					<!-- about section -->
 					<div id="about" class="tab">
-						<iframe src="./about.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+						<iframe src="./tabs/about.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
 					</div>
 					<!-- resume section -->
 					<div id="resume" class="tab">
-						<iframe src="./resume.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+						<iframe src="./tabs/resume.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
 					</div>
 					<!-- <div id="blog" class="tab"> -->
 					<!-- 	<iframe src="./blog.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe> -->
 					<!-- </div> -->
 					<div id="home" class="tab">
-						<iframe src="./home.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+						<iframe src="./tabs/home.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
 					</div>
 				</div>
 			</content>
 			<!-- CONTENT ENDS HERE -->
 
 			<!--FOOTER BEGINS HERE-->
-			<iframe src="./footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+			<iframe src="./common/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
 			<!--FOOTER ENDS HERE-->
 
 		</div>

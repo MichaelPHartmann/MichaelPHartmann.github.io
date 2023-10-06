@@ -1,9 +1,17 @@
+/* fonts */
+@import './fonts.css';
+
 /* general style */
 body {
 	background-color: rgba(210, 218, 221, 1);
-	font-family: Inconsolata;
+	font-family: 'Inconsolata', monospace;
 	color: black;
 	margin: 10vh;
+}
+@media only screen and (max-width: 850px) {
+	body {
+		margin: 5vh;
+	}
 }
 #page-container {
 	min-height: 100%;
