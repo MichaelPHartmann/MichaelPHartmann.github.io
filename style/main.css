@@ -127,3 +127,8 @@ a:visited:not(h1 *) {
 a:hover {
 	color: rgb(150, 150, 150);
 }
+
+/* text styling */
+h1 {
+  font-size: 75px;
+}
