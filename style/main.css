@@ -104,6 +104,9 @@ body {
 fieldset {
   margin-bottom: 2%;
 }
+.bike-input {
+  margin-bottom: 1%;
+}
 
 /* tab selecting */
 #tabs > .tab:target ~ .tab:last-child,
