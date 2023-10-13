@@ -64,11 +64,11 @@ body {
 	background-color: rgba(210, 218, 215, 1);
 	font-family: 'Inconsolata', monospace;
 	color: black;
-	margin: 10vh;
+	margin: 5vh;
 }
 @media only screen and (max-width: 850px) {
 	body {
-		margin: 5vh;
+		margin: 2.5vh 5vh 2.5vh 5vh;
 	}
 }
 #page-container {
@@ -101,6 +101,9 @@ body {
 	border-bottom: 1px black solid;
 	margin-bottom: 15px;
 }
+fieldset {
+  margin-bottom: 2%;
+}
 
 /* tab selecting */
 #tabs > .tab:target ~ .tab:last-child,
@@ -131,4 +134,10 @@ a:hover {
 /* text styling */
 h1 {
   font-size: 75px;
+}
+.breaker {
+  color: darkred;
+}
+.fine {
+  color: darkgreen;
 }
