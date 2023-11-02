@@ -60,11 +60,15 @@
 }
 
 /* general style */
+:root {
+  --background: rgba(200, 200, 200, 1);
+  --card-background: rgba(230, 230, 230, 1)
+}
 body {
-	background-color: rgba(210, 218, 215, 1);
+	background-color: var(--background);
 	font-family: 'Inconsolata', monospace;
 	color: black;
-	margin: 5vh;
+	margin: 7.5vh;
 }
 @media only screen and (max-width: 850px) {
 	body {
@@ -143,4 +147,27 @@ h1 {
 }
 .fine {
   color: darkgreen;
+}
+
+/* blog styling */
+.blog-post {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+}
+.posts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10%;
+}
+.post {
+	background-color: var(--card-background);
+	width: 45%;
+  padding: 5px;
+  border-radius: 2px;
+	box-shadow: 5px 5px 5px grey;
+}
+#tags {
+  columns: 3;
 }
