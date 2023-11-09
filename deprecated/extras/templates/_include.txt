@@ -1,5 +1,0 @@
-index.html
-resume.html
-about.html
-projects.html
-templates/website_template_web.html
