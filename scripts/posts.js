@@ -12,5 +12,12 @@ export const posts = {
 		"date": "17.12.23",
 		"file": "../posts/taiwan-first-week.html",
 		"tags": ['post', 'travel', 'taiwan']
+	},
+	"01-24-003": {
+		"title": "Taiwan Lookback (After 2 Months)",
+		"description": "My notes after spending 2 months in Taiwan",
+		"date": "12.01.24",
+		"file": "../posts/taiwan-lookback.html",
+		"tags": ['post', 'taiwan', 'travel']
 	}
 };
