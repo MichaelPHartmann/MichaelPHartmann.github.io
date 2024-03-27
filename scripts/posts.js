@@ -19,5 +19,12 @@ export const posts = {
 		"date": "12.01.24",
 		"file": "../posts/taiwan-lookback.html",
 		"tags": ['post', 'taiwan', 'travel']
+	},
+	"02-24-004" : {
+		"title": "My Visits to Hanoi and Saigon",
+		"description": "A log of the things I did and saw in the two largest cities in Vietnam",
+		"date": "27.03.24",
+		"file": "../posts/vietnam.html",
+		"tags": ['post', 'vietnam', 'travel']
 	}
 };
