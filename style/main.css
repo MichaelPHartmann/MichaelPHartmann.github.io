@@ -158,16 +158,33 @@ h1 {
 .posts {
 	display: flex;
 	flex-direction: row;
+  flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 10%;
 }
 .post {
 	background-color: var(--card-background);
-	width: 45%;
+  flex: 1 0 30%;
   padding: 5px;
+  margin: 10px;
   border-radius: 2px;
 	box-shadow: 5px 5px 5px grey;
 }
 #tags {
   columns: 3;
+}
+
+img {
+  border: thick white solid;
+  margin: 20px;
+}
+
+.portrait {
+  width: 350px;
+  height: auto;
+}
+
+.landscape {
+  height: 350px;
+  width: auto;
 }

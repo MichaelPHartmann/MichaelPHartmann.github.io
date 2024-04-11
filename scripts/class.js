@@ -89,23 +89,10 @@ export class MikeWebsite {
 		}
 	}
 
-	sendMessage() {
-		console.log(
-			`%cHey there, and welcome to my site!\n
-They say a jack-of-all-trades but master of none is still better than a master of one.\n
-In all of my pursuits I found common threads that drew me in:\n
-- a chance to solve challenging problems\n
-- opportunity to learn something new\n
-If you're hiring, send me a message!`,
-			'color: darkblue;',
-		)
-	}
-
 	init() {
 		this.paintPosts('posts');
 		this.countTags();
 		this.paintTags();
-		this.sendMessage();
 	}
 }
 

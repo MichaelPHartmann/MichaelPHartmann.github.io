@@ -26,5 +26,12 @@ export const posts = {
 		"date": "27.03.24",
 		"file": "../posts/vietnam.html",
 		"tags": ['post', 'vietnam', 'travel']
+	},
+	"02-24-005" : {
+		"title": "My Vietnam Motorcycle RoadTrip",
+		"description": "A day by day account of my 12 day trip from Hanoi to Saigon",
+		"date": "10.04.24",
+		"file": "../posts/vietnam-roadtrip.html",
+		"tags": ['post', 'vietnam', 'travel', 'motorcycle']
 	}
 };
