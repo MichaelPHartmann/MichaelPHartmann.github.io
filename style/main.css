@@ -188,3 +188,14 @@ img {
   height: 350px;
   width: auto;
 }
+
+@media only screen and (max-width: 450px) {
+  .landscape {
+    height: auto;
+    width: 80%;
+  }
+  .portrait {
+    width: 80%;
+    height: auto;
+  }
+}
