@@ -33,5 +33,12 @@ export const posts = {
 		"date": "10.04.24",
 		"file": "../posts/vietnam-roadtrip.html",
 		"tags": ['post', 'vietnam', 'travel', 'motorcycle']
+	},
+	"05-24-006" : {
+		"title": "A Short and Varied Trip to Cambodia",
+		"description": "An account of my two week trip to Cambodia, visiting Phnom Penh and Siem Reap",
+		"date": "17.05.24",
+		"file": "../posts/cambodia.html",
+		"tags": ['post', 'cambodia', 'travel']
 	}
 };
