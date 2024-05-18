@@ -40,5 +40,12 @@ export const posts = {
 		"date": "17.05.24",
 		"file": "../posts/cambodia.html",
 		"tags": ['post', 'cambodia', 'travel']
+	},
+	"05-24-007" : {
+		"title": "Going Back to Thailand, Six Years Later",
+		"description": "I go back to Thailand after teaching there several years ago to discover if I still like it",
+		"date": "18.05.24",
+		"file": "../posts/thailand.html",
+		"tags": ['post', 'thailand', 'travel']
 	}
 };
