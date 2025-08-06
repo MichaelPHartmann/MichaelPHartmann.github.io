@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en-ca">
 <!--HEAD BEGINS HERE-->
@@ -35,15 +35,18 @@ If you're hiring, send me a message!
 <!-- Load Stylesheet -->
 <link rel="stylesheet" href="./style/main.css" >
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGRKMSJ0BD"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+<!--Load HTMX (This should be replaced with self-hosted version for full production)-->
+<script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm" crossorigin="anonymous"></script>
 
-	gtag('config', 'G-KGRKMSJ0BD');
-</script>
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGRKMSJ0BD"></script> -->
+<!-- <script> -->
+<!-- 	window.dataLayer = window.dataLayer || []; -->
+<!-- 	function gtag(){dataLayer.push(arguments);} -->
+<!-- 	gtag('js', new Date()); -->
+
+<!-- 	gtag('config', 'G-KGRKMSJ0BD'); -->
+<!-- </script> -->
 
 <!--Web Page Title-->
 <title>Michael Hartmann</title>
@@ -57,35 +60,96 @@ If you're hiring, send me a message!
 		<div id="page-container">
 
 			<!--HEADER BEGINS HERE-->
-			<iframe src="./common/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+
+			<header id="header">
+				<h1><a>
+						Michael Hartmann
+					</a>
+				</h1>
+				<div id="top-navigation">
+					<h2><a tabindex="0"
+							hx-push-url="#about"
+							hx-trigger="click, aboutEvent from:body"
+							hx-get="./tabs/about.html"
+							hx-target="#tabs">
+							ABOUT
+						</a>
+					</h2>
+					<h2><a tabindex="0"
+							hx-push-url="#resume"
+							hx-trigger="click"
+							hx-get="./tabs/resume.html"
+							hx-target="#tabs">
+							RESUME
+						</a>
+					</h2>
+					<!-- <h2><a tabindex="0" -->
+					<!-- 		hx-push-url="#blog" -->
+					<!-- 		hx-trigger="click" -->
+					<!-- 		hx-get="./tabs/blog.html" -->
+					<!-- 		hx-target="#tabs"> -->
+					<!-- 		BLOG -->
+					<!-- 	</a> -->
+					<!-- </h2> -->
+					<h2><a tabindex="0"
+							hx-push-url="#bike"
+							hx-trigger="click"
+							hx-get="./tabs/bike-checklist.html"
+							hx-target="#tabs">
+							BIKE
+						</a>
+					</h2>
+				</div>
+				<div class="divline"></div>
+			</header>
 			<!--HEADER ENDS HERE-->
 
 			<!-- CONTENT BEGINS HERE -->
 			<content id="content">
 				<div id="tabs">
-					<!-- about section -->
-					<div id="about" class="tab">
-						<iframe src="./tabs/about.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
-					</div>
-					<!-- resume section -->
-					<div id="resume" class="tab">
-						<iframe src="./tabs/resume.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
-					</div>
-					<div id="bike" class="tab">
-						<iframe src="./tabs/bike-checklist.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
-					</div>
-					<div id="blog" class="tab">
-						<iframe src="./tabs/blog.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
-					</div>
-					<div id="home" class="tab">
-						<iframe src="./tabs/home.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+					<!--This is where the tab page will load via HTMX-->
+					<!-- The HTML below is the standard placeholder for the entryway to the website-->
+					<div>
+						<h2>Hey, I'm Mike</h2>
+						<p>
+							<br>
+							I'm a self-taught software developer and a Business Administration graduate
+							with a specialization in Finance from Trinity Western University.
+							<br>
+							<br>
+							I work as a Engineering Manager and Solutions Engineer in the ad tech space,
+							contributing to the development of header bidding products.
+							I am also the creator of FinMesh, a Python API Wrapper with thousands of downloads.
+							I've worked in web development, project management,
+							and financial analysis, and have expertise in Python, JavaScript, C, PHP, SQL, GIT, and Linux.
+							I'm passionate about customer empowerment and thrive in a remote work environment.
+							<br>
+							<br>
+							Personally my interests can be mostly put into these categories:
+							<ul>
+								<li>Coffee</li>
+								<li>Travel</li>
+								<li>Motorcycles</li>
+								<li>Cats</li>
+								<li>Mechanics</li>
+								<li>DIY</li>
+							</ul>
+						</p>
 					</div>
 				</div>
 			</content>
 			<!-- CONTENT ENDS HERE -->
 
 			<!--FOOTER BEGINS HERE-->
-			<iframe src="./common/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" ></iframe>
+			<footer id="footer">
+				<div class="divline"></div>
+				<div id="bottom-navigation">
+					<a tabindex="0" target="_blank" href="//linkedin.com/in/michael-hartmann/">LINKEDIN</a>
+					<a tabindex="0" target="_blank" href="//github.com/MichaelPHartmann">GITHUB</a>
+					<a tabindex="0" href="mailto:michaelpeterhartmann94@gmail.com">EMAIL</a>
+					<a tabindex="0" target="_blank" href="//instagram.com/michaelpeterhartmann/">INSTAGRAM</a>
+				</div>
+			</footer>
 			<!--FOOTER ENDS HERE-->
 
 		</div>
