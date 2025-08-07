@@ -26,7 +26,6 @@ If you're hiring, send me a message!
 <link rel="canonical" href="https://michaelphartmann.github.io" >
 
 <!-- Load Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
 
 <!-- Preload Fonts from Google Fonts-->
@@ -37,13 +36,17 @@ If you're hiring, send me a message!
 
 <!--Load HTMX (This should be replaced with self-hosted version for full production)-->
 <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm" crossorigin="anonymous"></script>
-<!--
-In order to allow specific tabs to be referenced in links, etc and on page refresh
-I should use the HTMX JS AJAX API
-https://htmx.org/api/#ajax
-On page load simply get the index and render that partial into the page
-NEED TO TEST IF THIS ACTUALLY WORKS
--->
+
+<!--Use the HTMX AJAX API to load tab content dependent on the hash in the URL-->
+<script>
+	function loadPartialFromHash() {
+		const tabActive = document.location.hash;
+		if (!tabActive) return;
+		const tabPath = `./tabs/${tabActive.replace('#', '')}.html`;
+		htmx.ajax('GET', tabPath, '#tabs');
+	}
+	document.addEventListener('DOMContentLoaded', loadPartialFromHash);
+</script>
 
 <!-- Google tag (gtag.js) -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGRKMSJ0BD"></script> -->
@@ -70,7 +73,7 @@ NEED TO TEST IF THIS ACTUALLY WORKS
 
 			<header id="header">
 				<h1><a>
-						Michael Hartmann
+						Michael Peter Hartmann
 					</a>
 				</h1>
 				<div id="top-navigation">
@@ -99,7 +102,7 @@ NEED TO TEST IF THIS ACTUALLY WORKS
 					<!-- 	</a> -->
 					<!-- </h2> -->
 					<h2><a tabindex="0"
-							hx-push-url="#bike"
+							hx-push-url="#bike-checklist"
 							hx-trigger="click"
 							hx-get="./tabs/bike-checklist.html"
 							hx-target="#tabs">
