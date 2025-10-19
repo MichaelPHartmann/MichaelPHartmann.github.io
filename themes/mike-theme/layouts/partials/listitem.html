@@ -1,0 +1,16 @@
+<li>
+	<h3>
+		<a href="{{ .RelPermalink }}">
+			{{ .Title }}
+		</a>
+	</h3>
+	{{ if .PublishDate }}
+		<p>Date: {{ .PublishDate.Format "2 January, 2006" }}</p>
+	{{ end }}
+	{{ if .Params.tags }}
+		<p>Tags: {{- partial "tags.html" .  -}}</p>
+	{{ end }}
+	{{ if .Summary }}
+		<p>Summary: {{ .Summary }}</p>
+	{{ end }}
+</li>

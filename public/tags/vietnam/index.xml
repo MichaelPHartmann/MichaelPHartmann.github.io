@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vietnam on Michael Peter Hartmann</title>
+    <link>https://michaelpeterhartmann.net/tags/vietnam/</link>
+    <description>Recent content in Vietnam on Michael Peter Hartmann</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://michaelpeterhartmann.net/tags/vietnam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Veitnam Motorcycle Trip</title>
+      <link>https://michaelpeterhartmann.net/posts/vietnam-motorcycle/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://michaelpeterhartmann.net/posts/vietnam-motorcycle/</guid>
+      <description>A day by day account of my 2,500km motorycle ride from Hanoi to Ho Chi Minh City</description>
+    </item>
+  </channel>
+</rss>
