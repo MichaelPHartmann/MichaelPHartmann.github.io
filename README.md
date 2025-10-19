@@ -1,0 +1,1 @@
+[![Deploy to Firebase Hosting on merge](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/firebase-hosting-merge.yml)
