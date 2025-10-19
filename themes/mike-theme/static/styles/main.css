@@ -157,43 +157,7 @@ h1 {
   color: darkgreen;
 }
 
-/* blog styling */
-
-.posts {
-	display: flex;
-	flex-direction: row;
-  flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 10%;
-}
-
 img {
   border: thick white solid;
   margin: 20px;
 }
-
-.post {
-	background-color: var(--card-background);
-  flex: 1 0 30%;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 2px;
-	box-shadow: 5px 5px 5px grey;
-}
-
-@media only screen and (max-width: 450px) {
-  .landscape {
-    height: auto;
-    width: 80%;
-  }
-
-  .portrait {
-    height: auto;
-    width: 80%;
-  }
-
-  .post {
-    flex: 1 0 80%;
-  }
-}
-
