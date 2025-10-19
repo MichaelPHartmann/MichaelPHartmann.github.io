@@ -2,3 +2,6 @@ baseURL = 'https://michaelpeterhartmann.net/'
 languageCode = 'en-us'
 title = 'Michael Peter Hartmann'
 theme = 'mike-theme'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
