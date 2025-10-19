@@ -6,5 +6,5 @@ firebase-debug.*.log*
 .firebase/
 
 # Built Source
-./public
+public/
 
