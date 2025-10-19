@@ -10,4 +10,3 @@ jobs:
     - uses: vudoodv/deploy-hugo-to-the-firebase@master
       with:
         firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-        alias: ${{ alias }} // Optional
