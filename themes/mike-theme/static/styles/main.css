@@ -74,7 +74,7 @@ body {
 	font-family: 'Inconsolata', monospace;
 	background-color: light-dark(var(--background-light), var(--background-dark));
 	color: light-dark(var(--text-light), var(--text-dark));
-  width: 60%;
+  width: 75%;
   margin: auto;
   text-align: left;
   display: flex;
