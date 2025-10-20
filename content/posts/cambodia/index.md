@@ -1,6 +1,6 @@
 +++
 date = '2024-05-17'
-draft = true
+draft = false
 title = 'A Short and Varied Trip to Cambodia'
 summary = 'An account of my two week trip to Cambodia, visiting Phnom Penh and Siem Reap.'
 tags = ['cambodia', 'travel']
@@ -26,11 +26,16 @@ My time in Cambodia was also beset by some travel illness, some of my only on my
 
 I arrived to Phnom Pen via bus from Vietnam, the trip was about 12 hours from Ho Chi Minh city. I stayed in a hotel next to the river which provided a much needed breeze and break from the 30 degree heat and high humidity. Going out in the heat of the day was pretty brutal so I tried to time my walks around morning and evening. Down the road from my hotel was a large market with fresh meat, vegetables, and fruit on display for locals.
 
+{{< pimg src="phnom-penh-1.jpg" alt="A major temple in Phnom Penh" >}}
+
 In the other direction was the Royal Palace and the National Museum of Cambodia. The museum left much to be desired, as it felt like a random collection of broken statues and pillars that someone had just stumbled across. A lot of it was without dates or description which also did not help. The building itself however was beautiful, and probably the highlight of that visit however for the price of 10 Euros (very expensive) it's not a must-see.
+
+{{< pimg src="phnom-penh-2.jpg" alt="The riverfront in Phnom Penh" >}}
 
 The highlight of my time in Phnom Penh was meeting up with teaching friends I had made in Egypt. I got to enjoy their company and rooftop pool and meet some of their friends there. Before the food poisoning took over in the second part of my time there we explored some favourite spots on the weekend. Unfortunately something I ate came back to bite me, and I ended up spending a lot of time between my room, the corner store, and the pharmacy. In all I'm glad I visited, but I wouldn't say the experience was spectacular.
 
-A major temple in Phnom Penh The riverfront in Phnom Penh The national museum in Phnom Penh
+{{< pimg src="phnom-penh-3.jpg" alt="The national museum in Phnom Penh" >}}
+
 
 ## Siem Reap
 
@@ -45,15 +50,17 @@ Overall it felt quite touristy but not in an obnoxious way, and I enjoyed taking
 
 Of course the highlight of Siem Reap is the famous Angkor Wat temple. On my final day I booked a tour that would take us to several temples in the area, and while this was the only group tour of my entire trip it was well worth it and I met a number of other travellers. The tour started a couple hours before sunrise when we were driven to buy our tickets then to Angkor Wat itself to watch the sunrise.
 
+{{< pimg src="raider-1.jpg" alt="A tree growing at the tomb raider temple" >}}
+{{< pimg src="raider-2.jpg" alt="A tree growing at the tomb raider temple" >}}
+
 The hundreds of other tourists watching actually aided in the experience in my opinion, all of us quiet as the dawn approached. Just before dawn you can feel the air start to shift and a heavy humidity bears down on you as the birds and insects start to wake up. The sky behind the temple grows brighter and brighter and just as you think the show is over the orange sun rises up directly behind the towers.
+
+{{< pimg src="angkor-2.jpg" alt="Sunrise over Angkor Wat" >}}
 
 We spent probably an hour or so watching the sunrise, and I walked back and forth across the massive grounds, experiencing it from every angle. Once the sun has truly risen our tour ventured inside the temple to walk around all the nooks and crannies. The whole complex is massive, and from the top of the main tower you can see out over the manicured grass across the swamp land beyond.
 
+{{< pimg src="angkor-1.jpg" alt="Morning light on the pond in front of Angkor Wat" >}}
+
 After visiting Angkor Wat we also visited the Bayon temple, this one in a bit of disrepair but still quite striking as each pillar has massive faces carved into it. On our final stop we visited the Ta Prohm Temple, also known as the Indiana Jones or Tomb Raider temple. This one is unique in that it is mostly unrestored, and so the entire complex has trees and vines growing through, on, and around the rubble. Apart from the dozens of other people there it still feels quite authentic and how you might expect to stumble across a temple on a jungle expedition.
 
-A tree growing in the Tomb Raider temple
-A tree growing on the Tomb Raider temple
-Sunrise over Angkor Wat
-Morning light on the pond in front of Angkor Wat
-The top courtyard inside Angkor Wat
-
+{{< pimg src="angkor-3.jpg" alt="The top courtyard inside Angkor Wat" >}}
