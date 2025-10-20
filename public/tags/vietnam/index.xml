@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vietnam on Michael Peter Hartmann</title>
-    <link>https://michaelpeterhartmann.net/tags/vietnam/</link>
+    <link>http://localhost:1313/tags/vietnam/</link>
     <description>Recent content in Vietnam on Michael Peter Hartmann</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://michaelpeterhartmann.net/tags/vietnam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vietnam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Brief Recap of My Time in Hanoi and Ho Chi Minh City</title>
+      <link>http://localhost:1313/posts/vietnam/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vietnam/</guid>
+      <description>A log of the things I did and saw in the two largest cities in Vietnam.</description>
+    </item>
     <item>
       <title>My Veitnam Motorcycle Trip</title>
-      <link>https://michaelpeterhartmann.net/posts/vietnam-motorcycle/</link>
+      <link>http://localhost:1313/posts/vietnam-motorcycle/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://michaelpeterhartmann.net/posts/vietnam-motorcycle/</guid>
+      <guid>http://localhost:1313/posts/vietnam-motorcycle/</guid>
       <description>A day by day account of my 2,500km motorycle ride from Hanoi to Ho Chi Minh City</description>
     </item>
   </channel>

@@ -2,31 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Michael Peter Hartmann</title>
-    <link>https://michaelpeterhartmann.net/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Michael Peter Hartmann</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Oct 2025 18:46:43 +0200</lastBuildDate>
-    <atom:link href="https://michaelpeterhartmann.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Travel</title>
-      <link>https://michaelpeterhartmann.net/tags/travel/</link>
+      <link>http://localhost:1313/tags/travel/</link>
       <pubDate>Wed, 15 Oct 2025 18:46:43 +0200</pubDate>
-      <guid>https://michaelpeterhartmann.net/tags/travel/</guid>
+      <guid>http://localhost:1313/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/tags/test/</link>
+      <pubDate>Wed, 15 Oct 2025 17:00:42 +0200</pubDate>
+      <guid>http://localhost:1313/tags/test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thailand</title>
+      <link>http://localhost:1313/tags/thailand/</link>
+      <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/thailand/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cambodia</title>
+      <link>http://localhost:1313/tags/cambodia/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cambodia/</guid>
       <description></description>
     </item>
     <item>
       <title>Vietnam</title>
-      <link>https://michaelpeterhartmann.net/tags/vietnam/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://michaelpeterhartmann.net/tags/vietnam/</guid>
+      <link>http://localhost:1313/tags/vietnam/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vietnam/</guid>
       <description></description>
     </item>
     <item>
       <title>Taiwan</title>
-      <link>https://michaelpeterhartmann.net/tags/taiwan/</link>
+      <link>http://localhost:1313/tags/taiwan/</link>
       <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://michaelpeterhartmann.net/tags/taiwan/</guid>
+      <guid>http://localhost:1313/tags/taiwan/</guid>
       <description></description>
     </item>
   </channel>

@@ -62,7 +62,7 @@
 /* general style */
 /* color-scheme: light dark; */
 :root {
-  --background-light: rgba(230, 240 ,250 , 1);
+  --background-light: rgba(230, 230 ,230 , 1);
   --background-dark: black;
   --text-light: black;
   --text-dark: white;
@@ -80,7 +80,7 @@ body {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
 	body {
     width: 90%;
 	}
@@ -128,6 +128,33 @@ fieldset {
 
 .bike-input {
   margin-bottom: 1%;
+}
+
+.list-general {
+  list-style-type: none;
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0px;
+}
+
+.list-item {
+  background-color: white;
+  flex: 1 0 40%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-general {
+    flex-direction: column;
+  }
+
+  .list-item {
+    flex: 1 0 80%;
+  }
 }
 
 /* link styling */

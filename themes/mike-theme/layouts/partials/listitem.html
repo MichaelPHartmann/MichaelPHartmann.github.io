@@ -1,9 +1,10 @@
-<li>
+<li class="list-item">
 	<h3>
 		<a href="{{ .RelPermalink }}">
 			{{ .Title }}
 		</a>
 	</h3>
+	<div class="divline"></div>
 	{{ if .PublishDate }}
 		<p>Date: {{ .PublishDate.Format "2 January, 2006" }}</p>
 	{{ end }}
@@ -11,6 +12,6 @@
 		<p>Tags: {{- partial "tags.html" .  -}}</p>
 	{{ end }}
 	{{ if .Summary }}
-		<p>Summary: {{ .Summary }}</p>
+		<p>{{ .Summary }}</p>
 	{{ end }}
 </li>
