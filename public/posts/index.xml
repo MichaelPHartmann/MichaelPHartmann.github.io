@@ -6,15 +6,8 @@
     <description>Recent content on Michael Peter Hartmann</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Oct 2025 18:46:43 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 17:00:42 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Packing For Indefinite Travel Lengths</title>
-      <link>http://localhost:1313/posts/packing-list/</link>
-      <pubDate>Wed, 15 Oct 2025 18:46:43 +0200</pubDate>
-      <guid>http://localhost:1313/posts/packing-list/</guid>
-      <description>I&amp;rsquo;m going travelling, so what should I pack and how should I carry it all? I talk through my options and reasoning behind my packing plan. Be warned, it&amp;rsquo;s long and rambly.</description>
-    </item>
     <item>
       <title>Test Post</title>
       <link>http://localhost:1313/posts/first/</link>
@@ -63,6 +56,13 @@
       <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/taiwan-first-week/</guid>
       <description>These are a few notes and observations after my first full week in Taiwan</description>
+    </item>
+    <item>
+      <title>Packing For Indefinite Travel Lengths</title>
+      <link>http://localhost:1313/posts/packing-list/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/packing-list/</guid>
+      <description>I&amp;rsquo;m going travelling, so what should I pack and how should I carry it all? I talk through my options and reasoning behind my packing plan. Be warned, it&amp;rsquo;s long and rambly.</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 +++
 date = '2024-05-18'
-draft = true
+draft = false
 title = 'Going Back To Thailand, 6 Years Later'
 summary = 'I go back to Thailand after teaching there several years ago to discover if I still like it'
 tags = ['thailand', 'travel']
