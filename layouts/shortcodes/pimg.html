@@ -1,24 +1,19 @@
 <!-- Set the variable for the alternate text -->
 {{ $alt := .Get "alt" }}
-
 <!-- Find the image and assign it to a variable -->
 {{ $image := .Page.Resources.GetMatch (.Get "src") }}
-
 <!-- Constrain the image to certain dimensions (this keeps the scaling) -->
 {{ $image := $image.Fit "400x400" }}
-
 <!-- Create a variable for the width to use in the resize function -->
 {{ $w := $image.Width }}
-
 <!-- Create a variable that holds all the arguments for resizing -->
 {{ $xw := print $w "x q50" }}
-
 <!-- Adjust the quality of the image -->
 {{ $adjusted := $image.Resize $xw }}
-
 <!-- Build the HTML snippet that will display on page -->
 {{ with $adjusted }}
 <img
+  class="blog-image"
   src="{{ .RelPermalink }}"
   alt="{{ $alt }}"
   width="{{ .Width }}"

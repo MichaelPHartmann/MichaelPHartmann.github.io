@@ -1,0 +1,14 @@
+<div class="portfolio-container">
+{{ range .Page.Resources.Match "images/*" }}
+    {{ $image := .}}
+    {{ $image := $image.Fit "600x600" }}
+    {{ with $image }}
+        <div class="orientation-{{ .Exif.Tags.Orientation }}" >
+            {{ $filter := images.AutoOrient }}
+            {{ with .Filter $filter }}
+                <img class="portfolio-image" src="{{ .RelPermalink }}" width="{{ .Width }}" alt="">
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
+</div>
