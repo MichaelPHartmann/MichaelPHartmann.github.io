@@ -192,6 +192,8 @@ h1 {
   margin: auto;
 }
 
+/* Image Portfolio Styling */
+
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -214,3 +216,27 @@ h1 {
 .orientation-1, .orientation-3 {
     grid-column: span 2;
 }
+
+.modal {
+  position: fixed; /* line I changed */
+  overflow: auto; /* line I added */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+.modal_content {
+  margin: auto 0;
+  width: 100px;
+  height: 300px;
+  background-color: #999999;
+  border: 3px solid red;
+}
+
