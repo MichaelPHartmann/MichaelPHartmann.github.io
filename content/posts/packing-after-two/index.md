@@ -1,12 +1,13 @@
 +++
-date = '2025-10-26T22:18:20+01:00'
+date = '2025-10-27'
 draft = true
 title = 'My Bag Contents After Two Years of Travel'
+summary = 'After two years of travel my bag and packing has changed a lot. I dissect where I have been and what motivations and requirements exist, how and when my bag has changed, what my bag looks like now, and whether I think it is perfect. As with the original it is a little niche and rambling but may give you some good insights for your next trip.'
 tags = ['travel', 'packing']
 +++
 
 I've been all over the place in the last couple years, and my bag has changed a lot in that time.
-I __*[originally wrote about what I was packing at the beginning of my travels](/posts/)*__
+I __*[originally wrote about what I was packing at the beginning of my travels](/posts/packing-list/)*__
 and I thought a follow up would be interesting.
 I've added a few things and taken some away and compared to my original post I'll be going into more detail about why I chose each item.
 
@@ -45,13 +46,11 @@ I didn't use the keyboard much because it's really only useful if it can be setu
 rather than packing it up every day.
 I didn't miss it once so I know this was a good decision.
 
-## What I'd Change Next Time
-
 ## What My Bag Looks Like
 
 ### Bags, Pouches, Containers
 
-- MEC Backpack
+- MEC 40L Backpack
 - MEC Pencil Case
 - Toiletry Bag
 - 2x Homemade Passport Sleeves
@@ -124,4 +123,43 @@ I didn't miss it once so I know this was a good decision.
 - Nose Hair Scissors
 - Nail Clippers
 - Deodorant
+
+## What I'd Change Next Time
+
+While I'm pretty happy with the way this bag was packed there are probably a few things I'd change.
+The bulkiest part of the whole setup is the clothing, by far, and so I would definitely trim some items.
+The biggest reason for carrying as many clothes as I do is to avoid doing laundry too often but I think I can embrace the sink laundry life with a littl more planning.
+To start I would add a mesh laundry bag.
+These are incredibly light and compact and make washing clothes in a sink SO much easier.
+If I could do a load of laundry consisting of one shirt, two pairs of underwear, and two pairs of socks every other day I think that would be good enough.
+I can wash everything including pants in real laundry machine every two weeks or so.
+
+This would mean I can cut down on the number of clothes I carry.
+To start with I had too many shirts, and at the same time not enough variety.
+I would go down from seven t-shirts to three and add in a button up shirt that can be dressed up for a night out, date, or party.
+This would mean re-wearing my shirts more often but with a sink wash 4 shirts should be plenty to rotate through.
+I would also cut the number of underwear and socks I pack, from ten and eight respectively to five of each. 
+For pants and shorts I am pretty happy with two of each, but for shorter trips or single weather trips just one or the other would be fine.
+No point in bringing shorts to Kazakhstan in November.
+
+Beyond clothing I would also cut down on the little cords and stuff I accumulated along the trip.
+One long 2M USB C to USB C cable, and one each of a 50cm USB C to USB C and USB A to USB C would do the trick.
+Adding to this was less of a concious decision and more just circumstances bringing new cables into my life.
+Things like the camera battery charger are USB A to Micro USB which sucks, but just is what it is,
+although I may look at modifying the charger to use USB C.
+
+Some other things I would add would be more social items to complement the Dutch Blitz card game:
+
+- Six Dice (D6)
+- Deck of Cards
+
+Having these with me gives some flexibility to create social settings in hostels and while it adds a bit of bulk they would probably be well used.
+
+If possible I would shrink the size of my bag, but that's not a need.
+The only reason this would be nice is for motorcycle travel which I plan to do much more of in the future.
+Having a thirty-ish litre bag would be easier to strap to a bike or repack into saddle bags.
+The smaller size may also make it possible to carry the whole bag around on a day trip or layover and be small enough to squeeze into a bus overhead shelf.
+Other than that I think with the above changes I would have almost the perfect travel bag setup,
+being able to carry on to any flight, stash anywhere, slide into any locker and lug around with ease.
+It is cerainly possible to go smaller and lighter and I'll experiment with that for shorter trips but for me the setup I've described fits my needs perfectly.
 
