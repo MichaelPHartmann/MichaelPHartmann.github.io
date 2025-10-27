@@ -5,7 +5,7 @@ name: Build & Deploy -> Firebase @ Merge
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-hugo-deploy-firebase:
     runs-on: ubuntu-latest
