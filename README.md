@@ -2,10 +2,10 @@
 
 <div align="center">
 
-### Deploy Status For: [michaelpeterhartmann.net](michaelpeterhartmann.net)
+#### Deploy Status For: [michaelpeterhartmann.net](michaelpeterhartmann.net)
 [![Build & Deploy -> Firebase @ Merge](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/firebase-hosting-merge.yml)
 
-### Deploy Status For: [michaelphartmann.github.io](michaelphartmann.github.io)
+#### Deploy Status For: [michaelphartmann.github.io](michaelphartmann.github.io)
 [![Build & Deploy -> Pages @ Merge](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/MichaelPHartmann/MichaelPHartmann.github.io/actions/workflows/hugo.yaml)
 
 </div>
