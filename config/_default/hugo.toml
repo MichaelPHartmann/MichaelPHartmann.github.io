@@ -6,3 +6,6 @@ enableRobotsTXT = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+[build]
+  [build.buildStats]
+    enable = true
