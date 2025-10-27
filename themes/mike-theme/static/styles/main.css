@@ -191,6 +191,12 @@ h1 {
   display: block;
   margin: auto;
 }
+@media only screen and (max-width: 450px) {
+  .blog-image {
+    max-width: 80%;
+    height: auto;
+  }
+}
 
 /* Image Portfolio Styling */
 
