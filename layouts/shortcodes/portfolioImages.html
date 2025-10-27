@@ -1,0 +1,24 @@
+<div class="portfolio-container">
+{{ range .Page.Resources.Match "images/*" }}
+    {{ $image := .}}
+    {{ $adjusted := $image.Fit "600x600" }}
+    {{ with $adjusted }}
+        <div class="orientation-{{ .Exif.Tags.Orientation }}" >
+            {{ $filter := images.AutoOrient }}
+            {{ with .Filter $filter }}
+                <img class="portfolio-image" src="{{ .RelPermalink }}" width="{{ .Width }}" alt="">
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
+</div>
+<div class="modal hidden">
+    <div class="modal-content"></div>
+</div>
+   <script>
+       Array.from(document.getElementsByClassName("portfolio-image")).forEach((image) => {
+           image.addEventListener("click", () => {
+               document.getElementsByClassName("modal")[0].classList.toggle("hidden");
+           })
+       })
+   </script>
