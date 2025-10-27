@@ -3,7 +3,7 @@ date = '2023-11-01'
 draft = false
 title = 'Packing For Indefinite Travel Lengths'
 summary = "I'm going travelling, so what should I pack and how should I carry it all? I talk through my options and reasoning behind my packing plan. Be warned, it's long and rambly."
-tags = ['travel']
+tags = ['travel', 'packing']
 +++
 
 I currently planning on travelling internationally for approximately the next six months.
