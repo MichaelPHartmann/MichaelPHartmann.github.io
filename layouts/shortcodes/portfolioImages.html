@@ -1,24 +1,27 @@
-<div class="portfolio-container">
-{{ range .Page.Resources.Match "images/*" }}
-    {{ $image := .}}
-    {{ $adjusted := $image.Fit "600x600" }}
-    {{ with $adjusted }}
-        <div class="orientation-{{ .Exif.Tags.Orientation }}" >
-            {{ $filter := images.AutoOrient }}
-            {{ with .Filter $filter }}
-                <img class="portfolio-image" src="{{ .RelPermalink }}" width="{{ .Width }}" alt="">
-            {{ end }}
-        </div>
+<link type="text/css" rel="stylesheet" href="{{ absURL `styles/lightgallery-style/lightgallery-bundle.css` }}" />
+<script src="{{ absURL `js/lightgallery.min.js` }}"></script>
+<script src="{{ absURL `js/lightgallery-plugins/thumbnail/lg-thumbnail.min.js` }}"></script>
+<script src="{{ absURL `js/lightgallery-plugins/zoom/lg-zoom.min.js` }}"></script>
+
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: "",
+        speed: 500
+    });
+</script>
+
+<div id="lightgallery">
+    {{ range .Page.Resources.Match "images/*" }}
+        {{ $image := . }}
+        {{ $adjusted := $image.Fit "600x600" }}
+        {{ $thumbnail := $image }}
+        {{ with $adjusted }}
+        <a href="{{ .RelPermalink }}" >
+            <img alt="portfolio image " src="{{ .RelPermalink }}" />
+        </a>
+        {{ end }}
     {{ end }}
-{{ end }}
 </div>
-<div class="modal hidden">
-    <div class="modal-content"></div>
-</div>
-   <script>
-       Array.from(document.getElementsByClassName("portfolio-image")).forEach((image) => {
-           image.addEventListener("click", () => {
-               document.getElementsByClassName("modal")[0].classList.toggle("hidden");
-           })
-       })
-   </script>
+
