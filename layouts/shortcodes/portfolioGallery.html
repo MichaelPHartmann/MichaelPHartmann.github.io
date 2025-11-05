@@ -1,0 +1,34 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+Fancybox.bind("[data-fancybox]", {
+// Your custom options
+});
+</script>
+
+<!-- Create a filter to orient the images correctly based on EXIF data -->
+{{ $orient := images.AutoOrient }}
+<!-- Loop through all images -->
+{{ range .Page.Resources.Match "images/*" }}
+    <!-- Create an image object -->
+    {{ $image := . }}
+    <!-- Constrain the image without scaling or cropping and set quality to 50% -->
+    {{ $adjusted := $image.Fit "2000x2000 q50" }}
+    {{ $thumbnail := $image.Fit "600x600 q50" }}
+    {{ $thumbnail := $thumbnail.Crop "400x400" }}
+    {{ with $adjusted }}
+        {{ with .Filter $orient }}
+        <a href="{{ .RelPermalink }}" data-fancybox="portfolio" >
+        {{ with $thumbnail }}
+            {{ with .Filter $orient }}
+                <img class="portfolio-image" loading="lazy" src="{{ .RelPermalink }}" />
+            {{ end }}
+        {{ end }}
+        </a>
+        {{ end }}
+    {{ end }}
+{{ end }}
