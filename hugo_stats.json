@@ -42,6 +42,8 @@
       "fine",
       "list-general",
       "list-item",
+      "portfolio-container",
+      "portfolio-image",
       "resume-section"
     ],
     "ids": [
@@ -113,6 +115,7 @@
       "lights",
       "logs",
       "manual",
+      "marketplaces",
       "mec-fast-track-shoulder-bag",
       "mec-fast-track-shoulder-bag-1",
       "night-markets",
@@ -126,6 +129,7 @@
       "pegs",
       "phnom-penh",
       "phuket",
+      "portfolio-container",
       "pressure",
       "pressure-guage",
       "rag",

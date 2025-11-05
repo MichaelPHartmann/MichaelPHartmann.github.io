@@ -10,6 +10,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 </script>
 
+<div class="portfolio-container">
 <!-- Create a filter to orient the images correctly based on EXIF data -->
 {{ $orient := images.AutoOrient }}
 <!-- Loop through all images -->
@@ -32,3 +33,4 @@ Fancybox.bind("[data-fancybox]", {
         {{ end }}
     {{ end }}
 {{ end }}
+</div>

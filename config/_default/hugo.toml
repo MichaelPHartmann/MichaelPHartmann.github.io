@@ -9,3 +9,5 @@ enableRobotsTXT = true
 [build]
   [build.buildStats]
     enable = true
+[security]
+  enableInlineShortcodes = true
