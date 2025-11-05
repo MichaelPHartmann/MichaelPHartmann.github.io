@@ -20,7 +20,7 @@ Fancybox.bind("[data-fancybox]", {
     <!-- Constrain the image without scaling or cropping and set quality to 50% -->
     {{ $adjusted := $image.Fit "2000x2000 q50" }}
     {{ $thumbnail := $image.Fit "600x600 q50" }}
-    {{ $thumbnail := $thumbnail.Crop "400x400" }}
+    {{ $thumbnail := $thumbnail.Crop "350x350" }}
     {{ with $adjusted }}
         {{ with .Filter $orient }}
         <a href="{{ .RelPermalink }}" data-fancybox="portfolio" >
