@@ -5,6 +5,9 @@ In the image viewer you can slide between images and zoom in.
 ### Marketplaces:
 
 - [PicFair](https://picfair.michaelpeterhartmann.net)
+    - Physical photo prints and digital asset downloads
+- [Pixels](https://michaelpeterhartmann.pixels.com)
+- Physical prints, greeting cards, puzzles, etc. with my photography
 
 If you have any question about my photography, buying digital assets or prints,or just want to see more you can find links to Instagram (where I post photos more often) and my Email. Don't hesitate to reach out.
 
