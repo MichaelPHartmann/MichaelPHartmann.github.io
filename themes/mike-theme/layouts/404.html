@@ -1,0 +1,22 @@
+{{ define "main" }}
+<center>
+  <h2>404: Not Found</h2>
+	The page and content you requested cannot be found, not sure how you got here.
+	<br>
+	You don't have to go <a href="{{ .Site.Home.RelPermalink }}">HOME</a> but you can't stay here.
+	<br>
+	<br>
+	You can click any of the links above OR read one of these random blog posts:
+	<ul style="list-style-type: none;">
+	<!-- Grab all the pages of the site -->
+  {{ $p := site.RegularPages }}
+	<!-- Shuffle the pages, select the first 5, and iterate through them -->
+  {{ range $p | collections.Shuffle | first 5 }}
+	<!-- If there's a title we render it (category pages and som others may not have titles) -->
+		{{ if .LinkTitle }}
+			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+		{{ end }}
+  {{ end }}
+</ul>
+</center>
+{{ end }}
