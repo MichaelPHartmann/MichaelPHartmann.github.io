@@ -1,7 +1,5 @@
 +++
-date = '2025-10-15T17:00:42+02:00'
-draft = false
-title = 'home'
+title = 'Home'
 +++
 
 ## Hey, I'm Mike
