@@ -11,6 +11,7 @@
 	{{ if .Params.tags }}
 		<p>Tags: {{- partial "tags.html" .  -}}</p>
 	{{ end }}
+	<p>Reading Time: ~{{ .ReadingTime }} minutes</p>
 	{{ if .Summary }}
 		<p>{{ .Summary }}</p>
 	{{ end }}
