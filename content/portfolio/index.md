@@ -3,19 +3,16 @@ title = 'Portfolio'
 showTitle = false
 +++
 
-This is a sampling of my photography, please note everything here is compressed and resized. Digital files and prints with full resolution are available for purchase.
+This is a sampling of my photography, please note everything here is compressed and resized.
+Digital files and prints with full resolution are available for purchase.
 You can click on any thumbnail to see the complete image in it's correct aspect ratio/crop.
 In the image viewer you can slide between images and zoom in.
 
-### Marketplaces:
+<!-- ### Marketplaces -->
 
-- [PicFair](https://picfair.michaelpeterhartmann.net)
-    - Physical photo prints and digital asset downloads
-- [Pixels](https://michaelpeterhartmann.pixels.com)
-    - Physical prints, greeting cards, puzzles, etc. with my photography
+<!-- - [Pixels](https://michaelpeterhartmann.pixels.com) -->
 
-If you have any question about my photography, buying digital assets or prints,or just want to see more you can find links to Instagram (where I post photos more often) and my Email. Don't hesitate to reach out.
-
+If you have any question about my photography, buying digital assets, commisioning work, or adding my work to your gallery please do not hesitate to reach out.
+Links to my social media and email are at the bottom of the page.
 
 {{< portfolioGallery >}}
-
